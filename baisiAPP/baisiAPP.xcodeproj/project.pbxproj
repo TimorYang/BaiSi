@@ -7,23 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6AF967561D1019B5005AF466 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF967551D1019B5005AF466 /* main.m */; };
-		6AF967591D1019B5005AF466 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF967581D1019B5005AF466 /* AppDelegate.m */; };
-		6AF9675C1D1019B5005AF466 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF9675B1D1019B5005AF466 /* ViewController.m */; };
 		6AF967611D1019B5005AF466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AF967601D1019B5005AF466 /* Assets.xcassets */; };
 		6AF967641D1019B5005AF466 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF967621D1019B5005AF466 /* LaunchScreen.storyboard */; };
+		6AF9678B1D102CFA005AF466 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF967841D102CFA005AF466 /* AppDelegate.m */; };
+		6AF9678C1D102CFA005AF466 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF967851D102CFA005AF466 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6AF967511D1019B4005AF466 /* baisiAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baisiAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AF967551D1019B5005AF466 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6AF967571D1019B5005AF466 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6AF967581D1019B5005AF466 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6AF9675A1D1019B5005AF466 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6AF9675B1D1019B5005AF466 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6AF967601D1019B5005AF466 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AF967631D1019B5005AF466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AF967651D1019B5005AF466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AF967831D102CFA005AF466 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6AF967841D102CFA005AF466 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6AF967851D102CFA005AF466 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +53,7 @@
 		6AF967531D1019B4005AF466 /* baisiAPP */ = {
 			isa = PBXGroup;
 			children = (
-				6AF967571D1019B5005AF466 /* AppDelegate.h */,
-				6AF967581D1019B5005AF466 /* AppDelegate.m */,
-				6AF9675A1D1019B5005AF466 /* ViewController.h */,
-				6AF9675B1D1019B5005AF466 /* ViewController.m */,
+				6AF9676B1D102CFA005AF466 /* Classes */,
 				6AF967601D1019B5005AF466 /* Assets.xcassets */,
 				6AF967621D1019B5005AF466 /* LaunchScreen.storyboard */,
 				6AF967651D1019B5005AF466 /* Info.plist */,
@@ -71,9 +65,218 @@
 		6AF967541D1019B4005AF466 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6AF967551D1019B5005AF466 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6AF9676B1D102CFA005AF466 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6AF9676C1D102CFA005AF466 /* Essence(精华) */,
+				6AF967701D102CFA005AF466 /* FriendTrend(关注) */,
+				6AF967741D102CFA005AF466 /* Main */,
+				6AF9677A1D102CFA005AF466 /* Me(我) */,
+				6AF9677E1D102CFA005AF466 /* New(新帖) */,
+				6AF967821D102CFA005AF466 /* Other */,
+				6AF967861D102CFA005AF466 /* Publish(发布) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6AF9676C1D102CFA005AF466 /* Essence(精华) */ = {
+			isa = PBXGroup;
+			children = (
+				6AF9676D1D102CFA005AF466 /* Controller */,
+				6AF9676E1D102CFA005AF466 /* Model */,
+				6AF9676F1D102CFA005AF466 /* View */,
+			);
+			path = "Essence(精华)";
+			sourceTree = "<group>";
+		};
+		6AF9676D1D102CFA005AF466 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6AF9676E1D102CFA005AF466 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6AF9676F1D102CFA005AF466 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6AF967701D102CFA005AF466 /* FriendTrend(关注) */ = {
+			isa = PBXGroup;
+			children = (
+				6AF967711D102CFA005AF466 /* Controller */,
+				6AF967721D102CFA005AF466 /* Model */,
+				6AF967731D102CFA005AF466 /* View */,
+			);
+			path = "FriendTrend(关注)";
+			sourceTree = "<group>";
+		};
+		6AF967711D102CFA005AF466 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6AF967721D102CFA005AF466 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6AF967731D102CFA005AF466 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6AF967741D102CFA005AF466 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6AF967751D102CFA005AF466 /* Controller */,
+				6AF967761D102CFA005AF466 /* Model */,
+				6AF967771D102CFA005AF466 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6AF967751D102CFA005AF466 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6AF967761D102CFA005AF466 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6AF967771D102CFA005AF466 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6AF9677A1D102CFA005AF466 /* Me(我) */ = {
+			isa = PBXGroup;
+			children = (
+				6AF9677B1D102CFA005AF466 /* Controller */,
+				6AF9677C1D102CFA005AF466 /* Model */,
+				6AF9677D1D102CFA005AF466 /* View */,
+			);
+			path = "Me(我)";
+			sourceTree = "<group>";
+		};
+		6AF9677B1D102CFA005AF466 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6AF9677C1D102CFA005AF466 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6AF9677D1D102CFA005AF466 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6AF9677E1D102CFA005AF466 /* New(新帖) */ = {
+			isa = PBXGroup;
+			children = (
+				6AF9677F1D102CFA005AF466 /* Controller */,
+				6AF967801D102CFA005AF466 /* Model */,
+				6AF967811D102CFA005AF466 /* View */,
+			);
+			path = "New(新帖)";
+			sourceTree = "<group>";
+		};
+		6AF9677F1D102CFA005AF466 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6AF967801D102CFA005AF466 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6AF967811D102CFA005AF466 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6AF967821D102CFA005AF466 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				6AF967831D102CFA005AF466 /* AppDelegate.h */,
+				6AF967841D102CFA005AF466 /* AppDelegate.m */,
+				6AF967851D102CFA005AF466 /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		6AF967861D102CFA005AF466 /* Publish(发布) */ = {
+			isa = PBXGroup;
+			children = (
+				6AF967871D102CFA005AF466 /* Controller */,
+				6AF967881D102CFA005AF466 /* Model */,
+				6AF967891D102CFA005AF466 /* View */,
+			);
+			path = "Publish(发布)";
+			sourceTree = "<group>";
+		};
+		6AF967871D102CFA005AF466 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6AF967881D102CFA005AF466 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6AF967891D102CFA005AF466 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +348,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AF9675C1D1019B5005AF466 /* ViewController.m in Sources */,
-				6AF967591D1019B5005AF466 /* AppDelegate.m in Sources */,
-				6AF967561D1019B5005AF466 /* main.m in Sources */,
+				6AF9678B1D102CFA005AF466 /* AppDelegate.m in Sources */,
+				6AF9678C1D102CFA005AF466 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +494,7 @@
 				6AF9676A1D1019B5005AF466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
