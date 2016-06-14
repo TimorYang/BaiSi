@@ -12,12 +12,37 @@
 #import "TYPublishVC.h"
 #import "TYFriendTrendVC.h"
 #import "TYMeVC.h"
+#import "UIImage+Image.h"
 
 @interface TYTabBarController ()
 
 @end
 
 @implementation TYTabBarController
+
+//
++ (void)load
+{
+    //获取全局的TabBarItem
+    UITabBarItem *item = [UITabBarItem appearanceWhenContainedIn:self, nil];
+    //正常状态
+    //创建一个可变字典来存放属性
+    NSMutableDictionary *norAttrTitle = [NSMutableDictionary dictionary];
+    //字体大小属性
+    norAttrTitle[NSFontAttributeName] = [UIFont systemFontOfSize:12];
+    //加载属性
+    [item setTitleTextAttributes:norAttrTitle forState:UIControlStateNormal];
+    
+    //选中状态
+    //创建一个可变字典
+    NSMutableDictionary *selAttrTitle = [NSMutableDictionary dictionary];
+    //字体大小属性
+    selAttrTitle[NSFontAttributeName] = [UIFont systemFontOfSize:12];
+    //字体颜色属性
+    selAttrTitle[NSForegroundColorAttributeName] = [UIColor blackColor];
+    //加载属性
+    [item setTitleTextAttributes:selAttrTitle forState:UIControlStateSelected];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -93,9 +118,9 @@
     UIViewController *vc1 = self.childViewControllers[0];
     //设置图片
     //>> 默认状态
-    vc1.tabBarItem.image = [UIImage imageNamed:@"tabBar_essence_icon"];
+    vc1.tabBarItem.image = [UIImage imageWithOriginalName:@"tabBar_essence_icon"];
     //>> 选中状态
-    vc1.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_essence_click_icon"];
+    vc1.tabBarItem.selectedImage = [UIImage imageWithOriginalName:@"tabBar_essence_click_icon"];
     //设置文字
     vc1.tabBarItem.title = @"精华";
     
@@ -103,9 +128,9 @@
     UIViewController *vc2 = self.childViewControllers[1];
     //设置图片
     //>> 默认状态
-    vc2.tabBarItem.image = [UIImage imageNamed:@"tabBar_new_icon"];
+    vc2.tabBarItem.image = [UIImage imageWithOriginalName:@"tabBar_new_icon"];
     //>> 选中状态
-    vc2.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_new_click_icon"];
+    vc2.tabBarItem.selectedImage = [UIImage imageWithOriginalName:@"tabBar_new_click_icon"];
     //设置文字
     vc2.tabBarItem.title = @"新帖";
     
@@ -113,17 +138,17 @@
     UIViewController *vc3 = self.childViewControllers[2];
     //设置图片
     //>> 默认状态
-    vc3.tabBarItem.image = [UIImage imageNamed:@"tabBar_publish_icon"];
+    vc3.tabBarItem.image = [UIImage imageWithOriginalName:@"tabBar_publish_icon"];
     //>> 选中状态
-    vc3.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_publish_click_icon"];
+    vc3.tabBarItem.selectedImage = [UIImage imageWithOriginalName:@"tabBar_publish_click_icon"];
     
     //关注
     UIViewController *vc4 = self.childViewControllers[3];
     //设置图片
     //>> 默认状态
-    vc4.tabBarItem.image = [UIImage imageNamed:@"tabBar_friendTrends_icon"];
+    vc4.tabBarItem.image = [UIImage imageWithOriginalName:@"tabBar_friendTrends_icon"];
     //>> 选中状态
-    vc4.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_friendTrends_click_icon"];
+    vc4.tabBarItem.selectedImage = [UIImage imageWithOriginalName:@"tabBar_friendTrends_click_icon"];
     //设置文字
     vc4.tabBarItem.title = @"关注";
     
@@ -131,9 +156,9 @@
     UIViewController *vc5 = self.childViewControllers[4];
     //设置图片
     //>> 默认状态
-    vc5.tabBarItem.image = [UIImage imageNamed:@"tabBar_me_icon"];
+    vc5.tabBarItem.image = [UIImage imageWithOriginalName:@"tabBar_me_icon"];
     //>> 选中状态
-    vc5.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_me_click_icon"];
+    vc5.tabBarItem.selectedImage = [UIImage imageWithOriginalName:@"tabBar_me_click_icon"];
     //设置文字
     vc5.tabBarItem.title = @"我";
 

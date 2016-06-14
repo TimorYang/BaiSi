@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A33AC071D10603F00AAFBBF /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A33AC061D10603F00AAFBBF /* UIImage+Image.m */; };
 		6AF967611D1019B5005AF466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AF967601D1019B5005AF466 /* Assets.xcassets */; };
 		6AF967641D1019B5005AF466 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF967621D1019B5005AF466 /* LaunchScreen.storyboard */; };
 		6AF9678B1D102CFA005AF466 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF967841D102CFA005AF466 /* AppDelegate.m */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A33AC051D10603F00AAFBBF /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		6A33AC061D10603F00AAFBBF /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 		6AF967511D1019B4005AF466 /* baisiAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baisiAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF967601D1019B5005AF466 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AF967631D1019B5005AF466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +55,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A33AC011D105DAC00AAFBBF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6A33AC051D10603F00AAFBBF /* UIImage+Image.h */,
+				6A33AC061D10603F00AAFBBF /* UIImage+Image.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		6AF967481D1019B4005AF466 = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +281,7 @@
 		6AF967821D102CFA005AF466 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				6A33AC011D105DAC00AAFBBF /* Category */,
 				6AF967831D102CFA005AF466 /* AppDelegate.h */,
 				6AF967841D102CFA005AF466 /* AppDelegate.m */,
 				6AF967851D102CFA005AF466 /* main.m */,
@@ -382,6 +395,7 @@
 				6AF967981D102F4A005AF466 /* TYFriendTrendVC.m in Sources */,
 				6AF967951D102F2C005AF466 /* TYEssenceVC.m in Sources */,
 				6AF9678F1D102DBE005AF466 /* TYTabBarController.m in Sources */,
+				6A33AC071D10603F00AAFBBF /* UIImage+Image.m in Sources */,
 				6AF967A11D1030F4005AF466 /* TYMeVC.m in Sources */,
 				6AF9678B1D102CFA005AF466 /* AppDelegate.m in Sources */,
 				6AF9679B1D102F6C005AF466 /* TYNewVC.m in Sources */,
