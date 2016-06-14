@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TYTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -18,64 +19,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //1.创建UIWindow
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
     //2.设置window
     //> 2.1创建UITabBarController
-    UITabBarController *tabbarControll = [[UITabBarController alloc]init];
-    //添加子控制器
-    //>> 精华
-    //>> 1.创建UIViewController
-    UIViewController *vc = [[UIViewController alloc]init];
-    //>> 2.设置控制器view的背景色
-    vc.view.backgroundColor = [UIColor greenColor];
-    //>> 3.创建UINavigationController并设置vc为essenceNav的根控制器
-    UINavigationController *essenceNav = [[UINavigationController alloc]initWithRootViewController:vc];
-    //>> 4.将essenceNav添加到TabBarController中
-    [tabbarControll addChildViewController:essenceNav];
-    
-    //>> 新帖
-    //>> 1.创建UIViewController
-    UIViewController *vc2 = [[UIViewController alloc]init];
-    //>> 2.设置控制器view的背景色
-    vc2.view.backgroundColor = [UIColor yellowColor];
-    //>> 3.创建UINavigationController并设置vc为essenceNav的根控制器
-    UINavigationController *newNav = [[UINavigationController alloc]initWithRootViewController:vc2];
-    //>> 4.将essenceNav添加到TabBarController中
-    [tabbarControll addChildViewController:newNav];
-    
-    //>> 发布
-    //>> 1.创建UIViewController
-    UIViewController *vc3 = [[UIViewController alloc]init];
-    //>> 2.设置控制器view的背景色
-    vc3.view.backgroundColor = [UIColor purpleColor];
-    //>> 3.创建UINavigationController并设置vc为essenceNav的根控制器
-    UINavigationController *publishNav = [[UINavigationController alloc]initWithRootViewController:vc3];
-    //>> 4.将essenceNav添加到TabBarController中
-    [tabbarControll addChildViewController:publishNav];
-    
-    //>> 关注
-    //>> 1.创建UIViewController
-    UIViewController *vc4 = [[UIViewController alloc]init];
-    //>> 2.设置控制器view的背景色
-    vc4.view.backgroundColor = [UIColor redColor];
-    //>> 3.创建UINavigationController并设置vc为essenceNav的根控制器
-    UINavigationController *friendTrendNav = [[UINavigationController alloc]initWithRootViewController:vc4];
-    //>> 4.将essenceNav添加到TabBarController中
-    [tabbarControll addChildViewController:friendTrendNav];
-    
-    //>> 我
-    //>> 1.创建UIViewController
-    UIViewController *vc5 = [[UIViewController alloc]init];
-    //>> 2.设置控制器view的背景色
-    vc5.view.backgroundColor = [UIColor orangeColor];
-    //>> 3.创建UINavigationController并设置vc为essenceNav的根控制器
-    UINavigationController *meNav = [[UINavigationController alloc]initWithRootViewController:vc5];
-    //>> 4.将essenceNav添加到TabBarController中
-    [tabbarControll addChildViewController:meNav];
-    
+    TYTabBarController *tabbarControll = [[TYTabBarController alloc]init];
     //> 2.2设置控制器View的背景色
     tabbarControll.view.backgroundColor = [UIColor blueColor];
     //> 2.3设置窗口的根控制器
     self.window.rootViewController = tabbarControll;
+    
     //3.显示window
     [self.window makeKeyAndVisible];
     return YES;

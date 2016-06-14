@@ -11,6 +11,12 @@
 		6AF967641D1019B5005AF466 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF967621D1019B5005AF466 /* LaunchScreen.storyboard */; };
 		6AF9678B1D102CFA005AF466 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF967841D102CFA005AF466 /* AppDelegate.m */; };
 		6AF9678C1D102CFA005AF466 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF967851D102CFA005AF466 /* main.m */; };
+		6AF9678F1D102DBE005AF466 /* TYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF9678E1D102DBE005AF466 /* TYTabBarController.m */; };
+		6AF967951D102F2C005AF466 /* TYEssenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF967941D102F2C005AF466 /* TYEssenceVC.m */; };
+		6AF967981D102F4A005AF466 /* TYFriendTrendVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF967971D102F4A005AF466 /* TYFriendTrendVC.m */; };
+		6AF9679B1D102F6C005AF466 /* TYNewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF9679A1D102F6C005AF466 /* TYNewVC.m */; };
+		6AF9679E1D103056005AF466 /* TYPublishVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF9679D1D103056005AF466 /* TYPublishVC.m */; };
+		6AF967A11D1030F4005AF466 /* TYMeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF967A01D1030F4005AF466 /* TYMeVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +27,18 @@
 		6AF967831D102CFA005AF466 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6AF967841D102CFA005AF466 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6AF967851D102CFA005AF466 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6AF9678D1D102DBE005AF466 /* TYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTabBarController.h; sourceTree = "<group>"; };
+		6AF9678E1D102DBE005AF466 /* TYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTabBarController.m; sourceTree = "<group>"; };
+		6AF967931D102F2C005AF466 /* TYEssenceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYEssenceVC.h; sourceTree = "<group>"; };
+		6AF967941D102F2C005AF466 /* TYEssenceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYEssenceVC.m; sourceTree = "<group>"; };
+		6AF967961D102F4A005AF466 /* TYFriendTrendVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFriendTrendVC.h; sourceTree = "<group>"; };
+		6AF967971D102F4A005AF466 /* TYFriendTrendVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFriendTrendVC.m; sourceTree = "<group>"; };
+		6AF967991D102F6C005AF466 /* TYNewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYNewVC.h; sourceTree = "<group>"; };
+		6AF9679A1D102F6C005AF466 /* TYNewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYNewVC.m; sourceTree = "<group>"; };
+		6AF9679C1D103056005AF466 /* TYPublishVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYPublishVC.h; sourceTree = "<group>"; };
+		6AF9679D1D103056005AF466 /* TYPublishVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYPublishVC.m; sourceTree = "<group>"; };
+		6AF9679F1D1030F4005AF466 /* TYMeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYMeVC.h; sourceTree = "<group>"; };
+		6AF967A01D1030F4005AF466 /* TYMeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYMeVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,12 +91,12 @@
 			isa = PBXGroup;
 			children = (
 				6AF9676C1D102CFA005AF466 /* Essence(精华) */,
-				6AF967701D102CFA005AF466 /* FriendTrend(关注) */,
-				6AF967741D102CFA005AF466 /* Main */,
-				6AF9677A1D102CFA005AF466 /* Me(我) */,
 				6AF9677E1D102CFA005AF466 /* New(新帖) */,
-				6AF967821D102CFA005AF466 /* Other */,
 				6AF967861D102CFA005AF466 /* Publish(发布) */,
+				6AF967701D102CFA005AF466 /* FriendTrend(关注) */,
+				6AF9677A1D102CFA005AF466 /* Me(我) */,
+				6AF967741D102CFA005AF466 /* Main */,
+				6AF967821D102CFA005AF466 /* Other */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -96,6 +114,8 @@
 		6AF9676D1D102CFA005AF466 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6AF967931D102F2C005AF466 /* TYEssenceVC.h */,
+				6AF967941D102F2C005AF466 /* TYEssenceVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -127,6 +147,8 @@
 		6AF967711D102CFA005AF466 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6AF967961D102F4A005AF466 /* TYFriendTrendVC.h */,
+				6AF967971D102F4A005AF466 /* TYFriendTrendVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -158,6 +180,8 @@
 		6AF967751D102CFA005AF466 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6AF9678D1D102DBE005AF466 /* TYTabBarController.h */,
+				6AF9678E1D102DBE005AF466 /* TYTabBarController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -189,6 +213,8 @@
 		6AF9677B1D102CFA005AF466 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6AF9679F1D1030F4005AF466 /* TYMeVC.h */,
+				6AF967A01D1030F4005AF466 /* TYMeVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -220,6 +246,8 @@
 		6AF9677F1D102CFA005AF466 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6AF967991D102F6C005AF466 /* TYNewVC.h */,
+				6AF9679A1D102F6C005AF466 /* TYNewVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -261,6 +289,8 @@
 		6AF967871D102CFA005AF466 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6AF9679C1D103056005AF466 /* TYPublishVC.h */,
+				6AF9679D1D103056005AF466 /* TYPublishVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -305,6 +335,7 @@
 		6AF967491D1019B4005AF466 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TY;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = TimorYang;
 				TargetAttributes = {
@@ -348,8 +379,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AF967981D102F4A005AF466 /* TYFriendTrendVC.m in Sources */,
+				6AF967951D102F2C005AF466 /* TYEssenceVC.m in Sources */,
+				6AF9678F1D102DBE005AF466 /* TYTabBarController.m in Sources */,
+				6AF967A11D1030F4005AF466 /* TYMeVC.m in Sources */,
 				6AF9678B1D102CFA005AF466 /* AppDelegate.m in Sources */,
+				6AF9679B1D102F6C005AF466 /* TYNewVC.m in Sources */,
 				6AF9678C1D102CFA005AF466 /* main.m in Sources */,
+				6AF9679E1D103056005AF466 /* TYPublishVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
