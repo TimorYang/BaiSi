@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6A33AC071D10603F00AAFBBF /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A33AC061D10603F00AAFBBF /* UIImage+Image.m */; };
 		6A56FE5E1D1176E100AAC1E3 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A56FE5D1D1176E100AAC1E3 /* UIView+Frame.m */; };
+		6A56FE621D1182C400AAC1E3 /* UIBarButtonItem+item.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A56FE611D1182C400AAC1E3 /* UIBarButtonItem+item.m */; };
 		6AF967611D1019B5005AF466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AF967601D1019B5005AF466 /* Assets.xcassets */; };
 		6AF967641D1019B5005AF466 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF967621D1019B5005AF466 /* LaunchScreen.storyboard */; };
 		6AF9678B1D102CFA005AF466 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF967841D102CFA005AF466 /* AppDelegate.m */; };
@@ -27,6 +28,8 @@
 		6A56FE5C1D1176E100AAC1E3 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		6A56FE5D1D1176E100AAC1E3 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		6A56FE5F1D11787800AAC1E3 /* baisiAPP.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = baisiAPP.pch; sourceTree = "<group>"; };
+		6A56FE601D1182C400AAC1E3 /* UIBarButtonItem+item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+item.h"; sourceTree = "<group>"; };
+		6A56FE611D1182C400AAC1E3 /* UIBarButtonItem+item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+item.m"; sourceTree = "<group>"; };
 		6AF967511D1019B4005AF466 /* baisiAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baisiAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF967601D1019B5005AF466 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AF967631D1019B5005AF466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,6 +69,8 @@
 				6A33AC061D10603F00AAFBBF /* UIImage+Image.m */,
 				6A56FE5C1D1176E100AAC1E3 /* UIView+Frame.h */,
 				6A56FE5D1D1176E100AAC1E3 /* UIView+Frame.m */,
+				6A56FE601D1182C400AAC1E3 /* UIBarButtonItem+item.h */,
+				6A56FE611D1182C400AAC1E3 /* UIBarButtonItem+item.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -405,6 +410,7 @@
 				6A33AC071D10603F00AAFBBF /* UIImage+Image.m in Sources */,
 				6AF967A11D1030F4005AF466 /* TYMeVC.m in Sources */,
 				6AF9678B1D102CFA005AF466 /* AppDelegate.m in Sources */,
+				6A56FE621D1182C400AAC1E3 /* UIBarButtonItem+item.m in Sources */,
 				6AF9679B1D102F6C005AF466 /* TYNewVC.m in Sources */,
 				6AF9678C1D102CFA005AF466 /* main.m in Sources */,
 				6A56FE5E1D1176E100AAC1E3 /* UIView+Frame.m in Sources */,
@@ -512,6 +518,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = baisiAPP/Classes/Other/baisiAPP.pch;
 				INFOPLIST_FILE = baisiAPP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -526,6 +533,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = baisiAPP/Classes/Other/baisiAPP.pch;
 				INFOPLIST_FILE = baisiAPP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

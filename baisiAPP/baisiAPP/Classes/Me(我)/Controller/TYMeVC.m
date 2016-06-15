@@ -7,6 +7,7 @@
 //
 
 #import "TYMeVC.h"
+#import "UIBarButtonItem+item.h"
 
 @interface TYMeVC ()
 
@@ -16,22 +17,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    //添加标题
+    self.navigationItem.title = @"我的";
+    
+    //添加右侧按钮组
+    //第一个按钮
+    UIBarButtonItem *settingItem = [UIBarButtonItem buttonItemImage:[UIImage imageNamed:@"mine-setting-icon"] highLightImage:[UIImage imageNamed:@"mine-setting-icon-click"] target:self action:@selector(setting)];
+    //添加第二个按钮
+    UIBarButtonItem *nightModeItem = [UIBarButtonItem buttonItemImage:[UIImage imageNamed:@"mine-moon-icon"] selectImage:[UIImage imageNamed:@"mine-moon-icon-click"] target:self action:@selector(nightMode:)];
+    self.navigationItem.rightBarButtonItems = @[settingItem, nightModeItem];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - settingItem点击事件
+- (void)setting
+{
+    NSLog(@"点击了设置");
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - nightModeItem点击事件
+- (void)nightMode:(UIButton *)button
+{
+    button.selected = !button.selected;
+    NSLog(@"点击了夜间模式");
 }
-*/
-
 @end

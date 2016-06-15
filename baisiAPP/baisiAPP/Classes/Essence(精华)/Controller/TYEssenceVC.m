@@ -13,6 +13,7 @@
  */
 
 #import "TYEssenceVC.h"
+#import "UIBarButtonItem+item.h"
 
 @interface TYEssenceVC ()
 
@@ -23,30 +24,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //添加左边的item
-    //1.创建Button
-    UIButton *buttonItem = [UIButton buttonWithType:UIButtonTypeCustom];
-    //2.设置Button默认图片
-    [buttonItem setImage:[UIImage imageNamed:@"nav_item_game_icon"] forState:UIControlStateNormal];
-    //3.设置Button高亮图片
-    [buttonItem setImage:[UIImage imageNamed:@"nav_item_game_click_icon"] forState:UIControlStateHighlighted];
-    //4.设置Button尺寸
-    [buttonItem sizeToFit];
-    //5.监听按钮的点击
-    [buttonItem addTarget:self action:@selector(game) forControlEvents:UIControlEventTouchUpInside];
-    //5.创建一个UIView
-    UIView *view = [[UIView alloc]initWithFrame:buttonItem.bounds];
-    //6.把Button添加到View中
-    [view addSubview:buttonItem];
-    //5.设置左边的UIBarButtonItem
-    self.navigationItem.leftBarButtonItem =  [[UIBarButtonItem alloc]initWithCustomView:view];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem buttonItemImage:[UIImage imageNamed:@"nav_item_game_icon"] highLightImage:[UIImage imageNamed:@"nav_item_game_click_icon"] target:self action:@selector(game)];
+    
+    //添加Title
+    self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    
+    //添加右边的item
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem buttonItemImage:[UIImage imageNamed:@"navigationButtonRandom"] highLightImage:[UIImage imageNamed:@"navigationButtonRandomClick"] target:self action:@selector(random)];
 }
 
 #pragma mark - 设置导航栏内容
 
-#pragma mark - 按钮点击事件
+#pragma mark - 游戏按钮点击事件
 - (void)game
 {
     NSLog(@"点击了game");
 }
 
+#pragma mark - 随机按钮点击事件
+- (void)random
+{
+    NSLog(@"点击了随机");
+}
 @end
