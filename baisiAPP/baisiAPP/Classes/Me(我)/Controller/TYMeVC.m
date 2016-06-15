@@ -17,6 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //设置导航栏内容
+    [self setupNavigationBar];
+}
+#pragma mark - 设置导航栏内容
+- (void)setupNavigationBar
+{
     //添加标题
     self.navigationItem.title = @"我的";
     
@@ -26,9 +32,8 @@
     //添加第二个按钮
     UIBarButtonItem *nightModeItem = [UIBarButtonItem buttonItemImage:[UIImage imageNamed:@"mine-moon-icon"] selectImage:[UIImage imageNamed:@"mine-moon-icon-click"] target:self action:@selector(nightMode:)];
     self.navigationItem.rightBarButtonItems = @[settingItem, nightModeItem];
-    
-}
 
+}
 #pragma mark - settingItem点击事件
 - (void)setting
 {

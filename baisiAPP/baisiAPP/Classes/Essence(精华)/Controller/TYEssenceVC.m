@@ -23,6 +23,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //设置导航栏内容
+    [self setupNavigationBar];
+}
+
+#pragma mark - 设置导航栏内容
+- (void)setupNavigationBar
+{
     //添加左边的item
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem buttonItemImage:[UIImage imageNamed:@"nav_item_game_icon"] highLightImage:[UIImage imageNamed:@"nav_item_game_click_icon"] target:self action:@selector(game)];
     
@@ -32,9 +39,6 @@
     //添加右边的item
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem buttonItemImage:[UIImage imageNamed:@"navigationButtonRandom"] highLightImage:[UIImage imageNamed:@"navigationButtonRandomClick"] target:self action:@selector(random)];
 }
-
-#pragma mark - 设置导航栏内容
-
 #pragma mark - 游戏按钮点击事件
 - (void)game
 {

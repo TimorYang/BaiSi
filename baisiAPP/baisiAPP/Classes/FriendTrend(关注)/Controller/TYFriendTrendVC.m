@@ -7,6 +7,7 @@
 //
 
 #import "TYFriendTrendVC.h"
+#import "UIBarButtonItem+item.h"
 
 @interface TYFriendTrendVC ()
 
@@ -16,7 +17,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    //设置导航栏内容
+    [self setupNavigationBar];
+}
+#pragma mark - 设置导航栏内容
+- (void)setupNavigationBar
+{
+    //添加左侧按钮
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem buttonItemImage:[UIImage imageNamed:@"friendsRecommentIcon"] highLightImage:[UIImage imageNamed:@"friendsRecommentIcon-click"] target:self action:@selector(friendsRecomment)];
+    
+    //添加标题
+    self.navigationItem.title = @"我的关注";
+}
+
+#pragma mark - 推荐关注按钮点击事件
+- (void)friendsRecomment
+{
+    NSLog(@"点击了推荐按钮");
 }
 
 - (void)didReceiveMemoryWarning {
