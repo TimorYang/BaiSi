@@ -1,0 +1,25 @@
+//
+//  baisiAPP.pch
+//  baisiAPP
+//
+//  Created by TimorYang on 16/6/15.
+//  Copyright © 2016年 TimorYang. All rights reserved.
+//
+
+//PCH文件命名规范 必须和工程名称一致
+
+#ifdef __OBJC__
+
+#define TYScreenW [UIScreen mainScreen].bounds.size.width
+#define TYScreenH [UIScreen mainScreen].bounds.size.height
+
+#import "UIView+Frame.h"
+
+//自定义Log
+#ifdef DEBUG
+#define TYLog(...) NSLog(__VA_ARGS__)
+#else
+#define TYLog(...)
+#endif
+
+#endif

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6A33AC071D10603F00AAFBBF /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A33AC061D10603F00AAFBBF /* UIImage+Image.m */; };
+		6A56FE5E1D1176E100AAC1E3 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A56FE5D1D1176E100AAC1E3 /* UIView+Frame.m */; };
 		6AF967611D1019B5005AF466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AF967601D1019B5005AF466 /* Assets.xcassets */; };
 		6AF967641D1019B5005AF466 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF967621D1019B5005AF466 /* LaunchScreen.storyboard */; };
 		6AF9678B1D102CFA005AF466 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF967841D102CFA005AF466 /* AppDelegate.m */; };
@@ -23,6 +24,9 @@
 /* Begin PBXFileReference section */
 		6A33AC051D10603F00AAFBBF /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
 		6A33AC061D10603F00AAFBBF /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		6A56FE5C1D1176E100AAC1E3 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		6A56FE5D1D1176E100AAC1E3 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		6A56FE5F1D11787800AAC1E3 /* baisiAPP.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = baisiAPP.pch; sourceTree = "<group>"; };
 		6AF967511D1019B4005AF466 /* baisiAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baisiAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF967601D1019B5005AF466 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AF967631D1019B5005AF466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 			children = (
 				6A33AC051D10603F00AAFBBF /* UIImage+Image.h */,
 				6A33AC061D10603F00AAFBBF /* UIImage+Image.m */,
+				6A56FE5C1D1176E100AAC1E3 /* UIView+Frame.h */,
+				6A56FE5D1D1176E100AAC1E3 /* UIView+Frame.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -285,6 +291,7 @@
 				6AF967831D102CFA005AF466 /* AppDelegate.h */,
 				6AF967841D102CFA005AF466 /* AppDelegate.m */,
 				6AF967851D102CFA005AF466 /* main.m */,
+				6A56FE5F1D11787800AAC1E3 /* baisiAPP.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -400,6 +407,7 @@
 				6AF9678B1D102CFA005AF466 /* AppDelegate.m in Sources */,
 				6AF9679B1D102F6C005AF466 /* TYNewVC.m in Sources */,
 				6AF9678C1D102CFA005AF466 /* main.m in Sources */,
+				6A56FE5E1D1176E100AAC1E3 /* UIView+Frame.m in Sources */,
 				6AF9679E1D103056005AF466 /* TYPublishVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

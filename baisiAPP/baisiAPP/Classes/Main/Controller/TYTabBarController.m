@@ -94,7 +94,7 @@
     //在TabBar上添加按钮
     [self addPublishBtn];
     //查看TabBar的子控件
-    NSLog(@"%@",self.tabBar.subviews);
+//    NSLog(@"%@",self.tabBar.subviews);
 }
 
 #pragma mark - viewWillAppear
@@ -103,7 +103,7 @@
 {
     [super viewWillAppear:animated];
     //查看TabBar的子控件
-    NSLog(@"%@",self.tabBar.subviews);
+//    NSLog(@"%@",self.tabBar.subviews);
 }
 
 #pragma mark - 添加子控制器
@@ -231,7 +231,9 @@
     [publishButton setImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
     //设置button高亮状态下的图片
     [publishButton setImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
+    //注意点******一定要先设置size,在设置位置******
     //设置button尺寸
+    //尺寸会根据内容自适应
     [publishButton sizeToFit];
     //设置button的位置
     publishButton.center = CGPointMake(self.tabBar.bounds.size.width * 0.5, self.tabBar.bounds.size.height * 0.5);
