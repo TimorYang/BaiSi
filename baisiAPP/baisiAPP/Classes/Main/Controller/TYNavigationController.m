@@ -12,9 +12,23 @@
  2. 为什么在pushViewController中来统一设置返回按钮
     > 当push到下一个Controller后,才需要返回按钮,所以在这个方法里面统一设置返回按钮
     **在TabBarController中我们用了initWithRootViewController来设置NavigationController的根控制器,initWithRootViewController底层会调用pushViewController这个方法,所以程序一启动pushViewController会被调用多次**
+ 3.侧滑手势
+    > interactivePopGestureRecognizer 在NavigationController中找到这个手势,猜测这个就是侧滑手势
+    > 打印View的子控件
+ 
+    假死状态:程序还在运行,但是界面死了,在根控制器的view下滑动返回
+ 
+    让手势失效 1.直接把手势清空 2.设置手势enable 3.通过代理也可以让手势失效
+ 
+    滑动返回功能在iOS7才有
+    滑动返回功能底层实现原理: 1.给导航控制器的view添加pan手势 2.在每次push的时候,当之前界面截屏 3.当滑动返回的时候,把图片展示到上一层
  */
 
 #import "TYNavigationController.h"
+
+@interface TYNavigationController ()<UIGestureRecognizerDelegate>
+
+@end
 
 @implementation TYNavigationController
 
@@ -38,7 +52,17 @@
 #pragma mark - viewDidLoad
 - (void)viewDidLoad
 {
+    //让手势失效的三种做法:1.清空手势,2.设置手势的enable,3.通过代理可以让手势失效
     [super viewDidLoad];
+    //猜测interactivePopGestureRecognizer就是侧滑返回的手势
+    self.interactivePopGestureRecognizer.delegate = self;
+    
+}
+
+#pragma mark - UIGestureRecognizerDelegate
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
+{
+    return self.childViewControllers.count > 1;
 }
 
 #pragma mark - pushViewController
