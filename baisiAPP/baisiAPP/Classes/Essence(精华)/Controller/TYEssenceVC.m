@@ -21,6 +21,8 @@
 
 @implementation TYEssenceVC
 
+// 导航条内容由栈顶控制器的navigationItem
+// 谁显示到最外边,谁就能设置导航条内容
 - (void)viewDidLoad {
     [super viewDidLoad];
     //设置导航栏内容

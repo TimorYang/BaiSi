@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TYMeVC : UIViewController
+@interface TYMeVC : UITableViewController
 
 @end

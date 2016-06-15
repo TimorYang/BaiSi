@@ -13,6 +13,7 @@
 #import "TYFriendTrendVC.h"
 #import "TYMeVC.h"
 #import "UIImage+Image.h"
+#import "TYNavigationController.h"
 
 // 分类思想
 // 为什么要去抽取分类:  复用
@@ -114,7 +115,7 @@
     //>> 1.创建UIViewController
     TYEssenceVC *vc1 = [[TYEssenceVC alloc]init];
     //>> 3.创建UINavigationController并设置vc为essenceNav的根控制器
-    UINavigationController *essenceNav = [[UINavigationController alloc]initWithRootViewController:vc1];
+    TYNavigationController *essenceNav = [[TYNavigationController alloc]initWithRootViewController:vc1];
     //>> 4.将essenceNav添加到TabBarController中
     [self addChildViewController:essenceNav];
     
@@ -122,7 +123,7 @@
     //>> 1.创建UIViewController
     TYNewVC *vc2 = [[TYNewVC alloc]init];
     //>> 3.创建UINavigationController并设置vc为essenceNav的根控制器
-    UINavigationController *newNav = [[UINavigationController alloc]initWithRootViewController:vc2];
+    TYNavigationController *newNav = [[TYNavigationController alloc]initWithRootViewController:vc2];
     //>> 4.将essenceNav添加到TabBarController中
     [self addChildViewController:newNav];
     
@@ -137,7 +138,7 @@
     //>> 1.创建UIViewController
     TYFriendTrendVC *vc4 = [[TYFriendTrendVC alloc]init];
     //>> 3.创建UINavigationController并设置vc为essenceNav的根控制器
-    UINavigationController *friendTrendNav = [[UINavigationController alloc]initWithRootViewController:vc4];
+    TYNavigationController *friendTrendNav = [[TYNavigationController alloc]initWithRootViewController:vc4];
     //>> 4.将essenceNav添加到TabBarController中
     [self addChildViewController:friendTrendNav];
     
@@ -145,7 +146,7 @@
     //>> 1.创建UIViewController
     TYMeVC *vc5 = [[TYMeVC alloc]init];
     //>> 3.创建UINavigationController并设置vc为essenceNav的根控制器
-    UINavigationController *meNav = [[UINavigationController alloc]initWithRootViewController:vc5];
+    TYNavigationController *meNav = [[TYNavigationController alloc]initWithRootViewController:vc5];
     //>> 4.将essenceNav添加到TabBarController中
     [self addChildViewController:meNav];
 }

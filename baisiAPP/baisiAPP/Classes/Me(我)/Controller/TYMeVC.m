@@ -8,6 +8,7 @@
 
 #import "TYMeVC.h"
 #import "UIBarButtonItem+item.h"
+#import "TYSettingController.h"
 
 @interface TYMeVC ()
 
@@ -37,7 +38,12 @@
 #pragma mark - settingItem点击事件
 - (void)setting
 {
-    NSLog(@"点击了设置");
+    //控制器对象
+    TYSettingController *settingVC = [[TYSettingController alloc]init];
+    //隐藏底部TabBar(一定要在push之前隐藏)
+    settingVC.hidesBottomBarWhenPushed = YES;
+    //跳转到设置控制器
+    [self.navigationController pushViewController:settingVC animated:YES];
 }
 
 #pragma mark - nightModeItem点击事件

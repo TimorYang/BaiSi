@@ -10,6 +10,8 @@
 		6A33AC071D10603F00AAFBBF /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A33AC061D10603F00AAFBBF /* UIImage+Image.m */; };
 		6A56FE5E1D1176E100AAC1E3 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A56FE5D1D1176E100AAC1E3 /* UIView+Frame.m */; };
 		6A56FE621D1182C400AAC1E3 /* UIBarButtonItem+item.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A56FE611D1182C400AAC1E3 /* UIBarButtonItem+item.m */; };
+		6A56FE651D1196AE00AAC1E3 /* TYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A56FE641D1196AE00AAC1E3 /* TYNavigationController.m */; };
+		6A85946F1D11ACC20005637F /* TYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85946E1D11ACC20005637F /* TYSettingController.m */; };
 		6AF967611D1019B5005AF466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AF967601D1019B5005AF466 /* Assets.xcassets */; };
 		6AF967641D1019B5005AF466 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF967621D1019B5005AF466 /* LaunchScreen.storyboard */; };
 		6AF9678B1D102CFA005AF466 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF967841D102CFA005AF466 /* AppDelegate.m */; };
@@ -30,6 +32,10 @@
 		6A56FE5F1D11787800AAC1E3 /* baisiAPP.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = baisiAPP.pch; sourceTree = "<group>"; };
 		6A56FE601D1182C400AAC1E3 /* UIBarButtonItem+item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+item.h"; sourceTree = "<group>"; };
 		6A56FE611D1182C400AAC1E3 /* UIBarButtonItem+item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+item.m"; sourceTree = "<group>"; };
+		6A56FE631D1196AE00AAC1E3 /* TYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYNavigationController.h; sourceTree = "<group>"; };
+		6A56FE641D1196AE00AAC1E3 /* TYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYNavigationController.m; sourceTree = "<group>"; };
+		6A85946D1D11ACC20005637F /* TYSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSettingController.h; sourceTree = "<group>"; };
+		6A85946E1D11ACC20005637F /* TYSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSettingController.m; sourceTree = "<group>"; };
 		6AF967511D1019B4005AF466 /* baisiAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baisiAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF967601D1019B5005AF466 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AF967631D1019B5005AF466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,6 +81,39 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		6A8594691D11AA970005637F /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				6A85946A1D11AA970005637F /* Controller */,
+				6A85946B1D11AA970005637F /* Model */,
+				6A85946C1D11AA970005637F /* View */,
+			);
+			path = "Setting(设置)";
+			sourceTree = "<group>";
+		};
+		6A85946A1D11AA970005637F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6A85946D1D11ACC20005637F /* TYSettingController.h */,
+				6A85946E1D11ACC20005637F /* TYSettingController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6A85946B1D11AA970005637F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6A85946C1D11AA970005637F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6AF967481D1019B4005AF466 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +152,7 @@
 		6AF9676B1D102CFA005AF466 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6A8594691D11AA970005637F /* Setting(设置) */,
 				6AF9676C1D102CFA005AF466 /* Essence(精华) */,
 				6AF9677E1D102CFA005AF466 /* New(新帖) */,
 				6AF967861D102CFA005AF466 /* Publish(发布) */,
@@ -205,6 +245,8 @@
 			children = (
 				6AF9678D1D102DBE005AF466 /* TYTabBarController.h */,
 				6AF9678E1D102DBE005AF466 /* TYTabBarController.m */,
+				6A56FE631D1196AE00AAC1E3 /* TYNavigationController.h */,
+				6A56FE641D1196AE00AAC1E3 /* TYNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -408,7 +450,9 @@
 				6AF967951D102F2C005AF466 /* TYEssenceVC.m in Sources */,
 				6AF9678F1D102DBE005AF466 /* TYTabBarController.m in Sources */,
 				6A33AC071D10603F00AAFBBF /* UIImage+Image.m in Sources */,
+				6A56FE651D1196AE00AAC1E3 /* TYNavigationController.m in Sources */,
 				6AF967A11D1030F4005AF466 /* TYMeVC.m in Sources */,
+				6A85946F1D11ACC20005637F /* TYSettingController.m in Sources */,
 				6AF9678B1D102CFA005AF466 /* AppDelegate.m in Sources */,
 				6A56FE621D1182C400AAC1E3 /* UIBarButtonItem+item.m in Sources */,
 				6AF9679B1D102F6C005AF466 /* TYNewVC.m in Sources */,

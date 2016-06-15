@@ -19,12 +19,7 @@
     [super viewDidLoad];
     //设置导航栏内容
     [self setupNavigationBar];
-    
-    //设置导航栏字体
-    NSMutableDictionary *attr = [NSMutableDictionary dictionary];
-    //设置为粗体字号20
-    attr[NSFontAttributeName] = [UIFont boldSystemFontOfSize:20];
-    [self.navigationController.navigationBar setTitleTextAttributes:attr];
+
 }
 #pragma mark - 设置导航栏内容
 - (void)setupNavigationBar
