@@ -55,10 +55,21 @@
     //让手势失效的三种做法:1.清空手势,2.设置手势的enable,3.通过代理可以让手势失效
     [super viewDidLoad];
     //猜测interactivePopGestureRecognizer就是侧滑返回的手势
-    self.interactivePopGestureRecognizer.delegate = self;
+//    self.interactivePopGestureRecognizer.delegate = self;
+    //获取interactivePopGestureRecognizer
+//    <UIScreenEdgePanGestureRecognizer: 0x7f7fe8c64fd0; state = Possible; delaysTouchesBegan = YES; view = <UILayoutContainerView 0x7f7fe8c635d0>; target= <(action=handleNavigationTransition:, target=<_UINavigationInteractiveTransition 0x7f7fe8c656b0>)>>
+    id target = self.interactivePopGestureRecognizer.delegate;
+    //添加一个pan手势
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:target action:@selector(handleNavigationTransition:)];
+    [self.view addGestureRecognizer:pan];
+    //设置pan手势的代理
+    pan.delegate = self;
+    
+    //让系统的侧滑手势失效
+    self.interactivePopGestureRecognizer.enabled = NO;
+//    NSLog(@"%@", self.interactivePopGestureRecognizer);
     
 }
-
 #pragma mark - UIGestureRecognizerDelegate
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
 {
