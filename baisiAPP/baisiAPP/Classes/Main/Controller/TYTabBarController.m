@@ -14,13 +14,38 @@
 #import "TYMeVC.h"
 #import "UIImage+Image.h"
 
+// 分类思想
+// 为什么要去抽取分类:  复用
+// 分类作用:扩充系统类的方法 不能扩充属性
+
+// 插件常识
+// 插件 肯定会安装到电脑 => 找到插件 => 路径 => 找插件代码 => 插件安装路径 => 搜索plug => install_path
+
+/*
+ tabBar上按钮内容 细节
+ 1.按钮被选中,图片会被渲染 1.修改图片 2.通过代码
+ 2.按钮被选中,标题会被渲染 标题字体太小
+ 2.1 设置标题 字体颜色 => 标题内容由对应子控制器的tabBarItem决定 => 找到tabBarItem设置
+ 
+ 3.中间发布按钮显示不出来
+ 分析: 中间图片和其它图片不一样 => 中间图片太大,导致显示不出来 => 选中图片可以显示出来,但是正常状态下显示不出来 => 选中状态下图片没有渲染,正常状态下图片可能被渲染
+ 
+ 4.中间图片位置不对
+ 4.1 去设置中间按钮位置
+ 
+ 5.系统的tabBar上按钮只有选中状态,但是实例程序是高亮状态
+ 5.1 中间按钮不能使用tabBar上按钮,只能用UIButton
+ 5.2 把中间的按钮换成UIButton
+ 
+ */
+
 @interface TYTabBarController ()
 
 @end
 
 @implementation TYTabBarController
 
-//
+//当类第一次加载到内存中调用
 + (void)load
 {
     //获取全局的TabBarItem
@@ -75,6 +100,7 @@
     UINavigationController *newNav = [[UINavigationController alloc]initWithRootViewController:vc2];
     //>> 4.将essenceNav添加到TabBarController中
     [self addChildViewController:newNav];
+    
     
     //>> 发布
     //>> 1.创建UIViewController
@@ -134,13 +160,15 @@
     //设置文字
     vc2.tabBarItem.title = @"新帖";
     
-    //发布
+    //发布(调整发布按钮的位置)
     UIViewController *vc3 = self.childViewControllers[2];
     //设置图片
     //>> 默认状态
     vc3.tabBarItem.image = [UIImage imageWithOriginalName:@"tabBar_publish_icon"];
     //>> 选中状态
     vc3.tabBarItem.selectedImage = [UIImage imageWithOriginalName:@"tabBar_publish_click_icon"];
+    //调整发布按钮的位置(设置内边距)
+    vc3.tabBarItem.imageInsets = UIEdgeInsetsMake(7, 0, -7, 0);
     
     //关注
     UIViewController *vc4 = self.childViewControllers[3];
