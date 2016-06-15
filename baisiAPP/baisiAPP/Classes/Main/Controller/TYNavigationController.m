@@ -6,6 +6,14 @@
 //  Copyright © 2016年 TimorYang. All rights reserved.
 //
 
+/*
+ 1. 为什么在load中设置导航条的字体
+    > 设置导航条的字体只需要做一次,而load这个方法是类加载到内存中时调用,只会调用一次,所以在这个方法里面来设置导航条的字体
+ 2. 为什么在pushViewController中来统一设置返回按钮
+    > 当push到下一个Controller后,才需要返回按钮,所以在这个方法里面统一设置返回按钮
+    **在TabBarController中我们用了initWithRootViewController来设置NavigationController的根控制器,initWithRootViewController底层会调用pushViewController这个方法,所以程序一启动pushViewController会被调用多次**
+ */
+
 #import "TYNavigationController.h"
 
 @implementation TYNavigationController
@@ -36,7 +44,7 @@
 #pragma mark - pushViewController
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    //非根控制器才需要返回按钮
+    //非根控制器才需要返回按钮(initWithRootViewController底层会调用push方法)
     if(self.childViewControllers.count > 0)
     {
         //设置导航栏左边的按钮
