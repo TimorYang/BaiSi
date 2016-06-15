@@ -36,6 +36,10 @@
  5.系统的tabBar上按钮只有选中状态,但是实例程序是高亮状态
  5.1 中间按钮不能使用tabBar上按钮,只能用UIButton
  5.2 把中间的按钮换成UIButton
+ 5.3 创建一个UIButton覆盖住当前的TabBar的发布按钮
+ 5.4 添加上去的Button不能够点击,但是TabBarController得View会显示为发布控制器的View我推测TabBar的按钮是在我添加Button后面添加的
+     解决方法:让TabBar中的发布按钮不能处理点击事件
+ 5.5 TabBar中的按钮是什么时候添加的呢
  
  */
 
@@ -48,9 +52,21 @@
 //当类第一次加载到内存中调用
 + (void)load
 {
+    /*
+     appearance注意:
+     1.任何类都可以使用appearance吗? 只有遵守了UIAppearance协议
+     2.哪些属性都可以通过appearance去设置? 只要定义了UI_APPEARANCE_SELECTOR宏就能使用
+     3.通过appearance去设置属性,必须要在控件显示之前去设置.
+     */
     //获取全局的TabBarItem
     UITabBarItem *item = [UITabBarItem appearanceWhenContainedIn:self, nil];
+    
+    // 设置标题颜色
+    // ***模型一般都是通过富文本属性去设置文字的颜色,字体等等.***
+    // 通过富文本属性 去设置 文字颜色,字体
+    
     //正常状态
+    // ****设置tabBar上按钮文字字体,必须通过正常状态下,才可以设置成功****
     //创建一个可变字典来存放属性
     NSMutableDictionary *norAttrTitle = [NSMutableDictionary dictionary];
     //字体大小属性
@@ -75,6 +91,19 @@
     [self setupAllChildViewController];
     //设置TabBarIterm按钮的图片和文字
     [self setupAllButtonIterm];
+    //在TabBar上添加按钮
+    [self addPublishBtn];
+    //查看TabBar的子控件
+    NSLog(@"%@",self.tabBar.subviews);
+}
+
+#pragma mark - viewWillAppear
+//系统TabBar上的按钮是在viewWillAppear时添加的
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    //查看TabBar的子控件
+    NSLog(@"%@",self.tabBar.subviews);
 }
 
 #pragma mark - 添加子控制器
@@ -160,15 +189,16 @@
     //设置文字
     vc2.tabBarItem.title = @"新帖";
     
-    //发布(调整发布按钮的位置)
+    //发布(通过UIButton覆盖到TabBarButton上)
     UIViewController *vc3 = self.childViewControllers[2];
-    //设置图片
-    //>> 默认状态
-    vc3.tabBarItem.image = [UIImage imageWithOriginalName:@"tabBar_publish_icon"];
-    //>> 选中状态
-    vc3.tabBarItem.selectedImage = [UIImage imageWithOriginalName:@"tabBar_publish_click_icon"];
-    //调整发布按钮的位置(设置内边距)
-    vc3.tabBarItem.imageInsets = UIEdgeInsetsMake(7, 0, -7, 0);
+    vc3.tabBarItem.enabled = NO;
+//    //设置图片
+//    //>> 默认状态
+//    vc3.tabBarItem.image = [UIImage imageWithOriginalName:@"tabBar_publish_icon"];
+//    //>> 选中状态
+//    vc3.tabBarItem.selectedImage = [UIImage imageWithOriginalName:@"tabBar_publish_click_icon"];
+//    //调整发布按钮的位置(设置内边距)
+//    vc3.tabBarItem.imageInsets = UIEdgeInsetsMake(7, 0, -7, 0);
     
     //关注
     UIViewController *vc4 = self.childViewControllers[3];
@@ -192,6 +222,22 @@
 
 }
 
+#pragma mark - 在TabBar上添加发布按钮
+- (void)addPublishBtn
+{
+    //创建一个Button覆盖到TabBar上
+    UIButton *publishButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    //设置button默认状态下的图片
+    [publishButton setImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
+    //设置button高亮状态下的图片
+    [publishButton setImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
+    //设置button尺寸
+    [publishButton sizeToFit];
+    //设置button的位置
+    publishButton.center = CGPointMake(self.tabBar.bounds.size.width * 0.5, self.tabBar.bounds.size.height * 0.5);
+    //添加到TabBar中
+    [self.tabBar addSubview:publishButton];
+}
 /*
 #pragma mark - Navigation
 
