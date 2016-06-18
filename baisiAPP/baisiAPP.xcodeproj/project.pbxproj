@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		6A33AC071D10603F00AAFBBF /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A33AC061D10603F00AAFBBF /* UIImage+Image.m */; };
+		6A37FF251D13DE4B00DD896F /* TYADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A37FF241D13DE4B00DD896F /* TYADViewController.m */; };
+		6A37FF271D13DE7900DD896F /* TYADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A37FF261D13DE7900DD896F /* TYADViewController.xib */; };
+		6A5548661D156B7900198464 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A55485F1D156B7900198464 /* LaunchImage-568h@2x.png */; };
+		6A5548671D156B7900198464 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5548601D156B7900198464 /* LaunchImage-700-568h@2x.png */; };
+		6A5548681D156B7900198464 /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5548611D156B7900198464 /* LaunchImage-700@2x.png */; };
+		6A5548691D156B7900198464 /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5548621D156B7900198464 /* LaunchImage-800-667h@2x.png */; };
+		6A55486A1D156B7900198464 /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5548631D156B7900198464 /* LaunchImage-800-Portrait-736h@3x.png */; };
+		6A55486B1D156B7900198464 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5548641D156B7900198464 /* LaunchImage.png */; };
+		6A55486C1D156B7900198464 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5548651D156B7900198464 /* LaunchImage@2x.png */; };
+		6A55486F1D15762C00198464 /* TYADItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A55486E1D15762C00198464 /* TYADItem.m */; };
 		6A56FE5E1D1176E100AAC1E3 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A56FE5D1D1176E100AAC1E3 /* UIView+Frame.m */; };
 		6A56FE621D1182C400AAC1E3 /* UIBarButtonItem+item.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A56FE611D1182C400AAC1E3 /* UIBarButtonItem+item.m */; };
 		6A56FE651D1196AE00AAC1E3 /* TYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A56FE641D1196AE00AAC1E3 /* TYNavigationController.m */; };
@@ -28,6 +38,18 @@
 /* Begin PBXFileReference section */
 		6A33AC051D10603F00AAFBBF /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
 		6A33AC061D10603F00AAFBBF /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		6A37FF231D13DE4B00DD896F /* TYADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYADViewController.h; sourceTree = "<group>"; };
+		6A37FF241D13DE4B00DD896F /* TYADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYADViewController.m; sourceTree = "<group>"; };
+		6A37FF261D13DE7900DD896F /* TYADViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYADViewController.xib; sourceTree = "<group>"; };
+		6A55485F1D156B7900198464 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
+		6A5548601D156B7900198464 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
+		6A5548611D156B7900198464 /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
+		6A5548621D156B7900198464 /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
+		6A5548631D156B7900198464 /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		6A5548641D156B7900198464 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		6A5548651D156B7900198464 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
+		6A55486D1D15762C00198464 /* TYADItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYADItem.h; sourceTree = "<group>"; };
+		6A55486E1D15762C00198464 /* TYADItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYADItem.m; sourceTree = "<group>"; };
 		6A56FE5C1D1176E100AAC1E3 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		6A56FE5D1D1176E100AAC1E3 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		6A56FE5F1D11787800AAC1E3 /* baisiAPP.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = baisiAPP.pch; sourceTree = "<group>"; };
@@ -84,6 +106,56 @@
 				6A56FE611D1182C400AAC1E3 /* UIBarButtonItem+item.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		6A37FF1F1D13DCF300DD896F /* AD(广告) */ = {
+			isa = PBXGroup;
+			children = (
+				6A37FF201D13DCF300DD896F /* Controller */,
+				6A37FF211D13DCF300DD896F /* Model */,
+				6A37FF221D13DCF300DD896F /* View */,
+			);
+			path = "AD(广告)";
+			sourceTree = "<group>";
+		};
+		6A37FF201D13DCF300DD896F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6A37FF231D13DE4B00DD896F /* TYADViewController.h */,
+				6A37FF241D13DE4B00DD896F /* TYADViewController.m */,
+				6A37FF261D13DE7900DD896F /* TYADViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6A37FF211D13DCF300DD896F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6A55486D1D15762C00198464 /* TYADItem.h */,
+				6A55486E1D15762C00198464 /* TYADItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6A37FF221D13DCF300DD896F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A55485E1D156B7900198464 /* 启动图片 */ = {
+			isa = PBXGroup;
+			children = (
+				6A55485F1D156B7900198464 /* LaunchImage-568h@2x.png */,
+				6A5548601D156B7900198464 /* LaunchImage-700-568h@2x.png */,
+				6A5548611D156B7900198464 /* LaunchImage-700@2x.png */,
+				6A5548621D156B7900198464 /* LaunchImage-800-667h@2x.png */,
+				6A5548631D156B7900198464 /* LaunchImage-800-Portrait-736h@3x.png */,
+				6A5548641D156B7900198464 /* LaunchImage.png */,
+				6A5548651D156B7900198464 /* LaunchImage@2x.png */,
+			);
+			path = "启动图片";
 			sourceTree = "<group>";
 		};
 		6A8594691D11AA970005637F /* Setting(设置) */ = {
@@ -152,6 +224,7 @@
 		6AF967541D1019B4005AF466 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6A55485E1D156B7900198464 /* 启动图片 */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -159,6 +232,7 @@
 		6AF9676B1D102CFA005AF466 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6A37FF1F1D13DCF300DD896F /* AD(广告) */,
 				6A8594691D11AA970005637F /* Setting(设置) */,
 				6AF9676C1D102CFA005AF466 /* Essence(精华) */,
 				6AF9677E1D102CFA005AF466 /* New(新帖) */,
@@ -461,8 +535,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A37FF271D13DE7900DD896F /* TYADViewController.xib in Resources */,
+				6A5548671D156B7900198464 /* LaunchImage-700-568h@2x.png in Resources */,
+				6A55486B1D156B7900198464 /* LaunchImage.png in Resources */,
 				6AF967641D1019B5005AF466 /* LaunchScreen.storyboard in Resources */,
+				6A5548681D156B7900198464 /* LaunchImage-700@2x.png in Resources */,
+				6A55486A1D156B7900198464 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				6A5548661D156B7900198464 /* LaunchImage-568h@2x.png in Resources */,
+				6A5548691D156B7900198464 /* LaunchImage-800-667h@2x.png in Resources */,
 				6AF967611D1019B5005AF466 /* Assets.xcassets in Resources */,
+				6A55486C1D156B7900198464 /* LaunchImage@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,11 +603,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A37FF251D13DE4B00DD896F /* TYADViewController.m in Sources */,
 				6AF967981D102F4A005AF466 /* TYFriendTrendVC.m in Sources */,
 				6AF967951D102F2C005AF466 /* TYEssenceVC.m in Sources */,
 				6AF9678F1D102DBE005AF466 /* TYTabBarController.m in Sources */,
 				6A33AC071D10603F00AAFBBF /* UIImage+Image.m in Sources */,
 				6A56FE651D1196AE00AAC1E3 /* TYNavigationController.m in Sources */,
+				6A55486F1D15762C00198464 /* TYADItem.m in Sources */,
 				6AF967A11D1030F4005AF466 /* TYMeVC.m in Sources */,
 				6A85946F1D11ACC20005637F /* TYSettingController.m in Sources */,
 				6AF9678B1D102CFA005AF466 /* AppDelegate.m in Sources */,
