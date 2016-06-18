@@ -41,7 +41,7 @@
     //控制器对象
     TYSettingController *settingVC = [[TYSettingController alloc]init];
     //隐藏底部TabBar(一定要在push之前隐藏)
-    settingVC.hidesBottomBarWhenPushed = YES;
+//    settingVC.hidesBottomBarWhenPushed = YES;
     //跳转到设置控制器
     [self.navigationController pushViewController:settingVC animated:YES];
 }

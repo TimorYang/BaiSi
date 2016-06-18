@@ -16,7 +16,7 @@
 #define iPhone6 ([UIScreen mainScreen].bounds.size.height == 667)
 #define iPhone5 ([UIScreen mainScreen].bounds.size.height == 568)
 #define iPhone4 ([UIScreen mainScreen].bounds.size.height == 480)
-
+#define BaseURL @"http://api.budejie.com/api/api_open.php"
 
 #import "UIView+Frame.h"
 

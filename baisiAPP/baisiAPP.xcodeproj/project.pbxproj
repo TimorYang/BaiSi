@@ -10,6 +10,10 @@
 		6A33AC071D10603F00AAFBBF /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A33AC061D10603F00AAFBBF /* UIImage+Image.m */; };
 		6A37FF251D13DE4B00DD896F /* TYADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A37FF241D13DE4B00DD896F /* TYADViewController.m */; };
 		6A37FF271D13DE7900DD896F /* TYADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A37FF261D13DE7900DD896F /* TYADViewController.xib */; };
+		6A3C51D61D15A1E50047AC4E /* TYSubTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C51D51D15A1E50047AC4E /* TYSubTagViewController.m */; };
+		6A3C51DA1D15A81F0047AC4E /* TYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C51D81D15A81F0047AC4E /* TYTableViewCell.m */; };
+		6A3C51DB1D15A81F0047AC4E /* TYTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A3C51D91D15A81F0047AC4E /* TYTableViewCell.xib */; };
+		6A3C51DE1D15B0910047AC4E /* TYSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C51DD1D15B0910047AC4E /* TYSubTagItem.m */; };
 		6A5548661D156B7900198464 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A55485F1D156B7900198464 /* LaunchImage-568h@2x.png */; };
 		6A5548671D156B7900198464 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5548601D156B7900198464 /* LaunchImage-700-568h@2x.png */; };
 		6A5548681D156B7900198464 /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5548611D156B7900198464 /* LaunchImage-700@2x.png */; };
@@ -41,6 +45,13 @@
 		6A37FF231D13DE4B00DD896F /* TYADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYADViewController.h; sourceTree = "<group>"; };
 		6A37FF241D13DE4B00DD896F /* TYADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYADViewController.m; sourceTree = "<group>"; };
 		6A37FF261D13DE7900DD896F /* TYADViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYADViewController.xib; sourceTree = "<group>"; };
+		6A3C51D41D15A1E50047AC4E /* TYSubTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSubTagViewController.h; sourceTree = "<group>"; };
+		6A3C51D51D15A1E50047AC4E /* TYSubTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSubTagViewController.m; sourceTree = "<group>"; };
+		6A3C51D71D15A81F0047AC4E /* TYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTableViewCell.h; sourceTree = "<group>"; };
+		6A3C51D81D15A81F0047AC4E /* TYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTableViewCell.m; sourceTree = "<group>"; };
+		6A3C51D91D15A81F0047AC4E /* TYTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYTableViewCell.xib; sourceTree = "<group>"; };
+		6A3C51DC1D15B0910047AC4E /* TYSubTagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSubTagItem.h; sourceTree = "<group>"; };
+		6A3C51DD1D15B0910047AC4E /* TYSubTagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSubTagItem.m; sourceTree = "<group>"; };
 		6A55485F1D156B7900198464 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
 		6A5548601D156B7900198464 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
 		6A5548611D156B7900198464 /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
@@ -394,6 +405,8 @@
 			children = (
 				6AF967991D102F6C005AF466 /* TYNewVC.h */,
 				6AF9679A1D102F6C005AF466 /* TYNewVC.m */,
+				6A3C51D41D15A1E50047AC4E /* TYSubTagViewController.h */,
+				6A3C51D51D15A1E50047AC4E /* TYSubTagViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -401,6 +414,8 @@
 		6AF967801D102CFA005AF466 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6A3C51DC1D15B0910047AC4E /* TYSubTagItem.h */,
+				6A3C51DD1D15B0910047AC4E /* TYSubTagItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -408,6 +423,9 @@
 		6AF967811D102CFA005AF466 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6A3C51D71D15A81F0047AC4E /* TYTableViewCell.h */,
+				6A3C51D81D15A81F0047AC4E /* TYTableViewCell.m */,
+				6A3C51D91D15A81F0047AC4E /* TYTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -539,6 +557,7 @@
 				6A5548671D156B7900198464 /* LaunchImage-700-568h@2x.png in Resources */,
 				6A55486B1D156B7900198464 /* LaunchImage.png in Resources */,
 				6AF967641D1019B5005AF466 /* LaunchScreen.storyboard in Resources */,
+				6A3C51DB1D15A81F0047AC4E /* TYTableViewCell.xib in Resources */,
 				6A5548681D156B7900198464 /* LaunchImage-700@2x.png in Resources */,
 				6A55486A1D156B7900198464 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				6A5548661D156B7900198464 /* LaunchImage-568h@2x.png in Resources */,
@@ -606,14 +625,17 @@
 				6A37FF251D13DE4B00DD896F /* TYADViewController.m in Sources */,
 				6AF967981D102F4A005AF466 /* TYFriendTrendVC.m in Sources */,
 				6AF967951D102F2C005AF466 /* TYEssenceVC.m in Sources */,
+				6A3C51DE1D15B0910047AC4E /* TYSubTagItem.m in Sources */,
 				6AF9678F1D102DBE005AF466 /* TYTabBarController.m in Sources */,
 				6A33AC071D10603F00AAFBBF /* UIImage+Image.m in Sources */,
+				6A3C51D61D15A1E50047AC4E /* TYSubTagViewController.m in Sources */,
 				6A56FE651D1196AE00AAC1E3 /* TYNavigationController.m in Sources */,
 				6A55486F1D15762C00198464 /* TYADItem.m in Sources */,
 				6AF967A11D1030F4005AF466 /* TYMeVC.m in Sources */,
 				6A85946F1D11ACC20005637F /* TYSettingController.m in Sources */,
 				6AF9678B1D102CFA005AF466 /* AppDelegate.m in Sources */,
 				6A56FE621D1182C400AAC1E3 /* UIBarButtonItem+item.m in Sources */,
+				6A3C51DA1D15A81F0047AC4E /* TYTableViewCell.m in Sources */,
 				6AF9679B1D102F6C005AF466 /* TYNewVC.m in Sources */,
 				6AF9678C1D102CFA005AF466 /* main.m in Sources */,
 				6A56FE5E1D1176E100AAC1E3 /* UIView+Frame.m in Sources */,

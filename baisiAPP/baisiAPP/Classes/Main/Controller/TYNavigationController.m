@@ -101,6 +101,8 @@
         backButton.contentEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);
         //
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:backButton];
+        //隐藏TabBar(统一设置)
+        viewController.hidesBottomBarWhenPushed = YES;
     }
     //真正的进行跳转
     [super pushViewController:viewController animated:animated];
