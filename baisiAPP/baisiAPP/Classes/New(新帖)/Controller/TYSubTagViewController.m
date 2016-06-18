@@ -31,7 +31,11 @@ static NSString *const ID = @"subtag";
  
  在开发中,尽量注册
  */
-
+/*
+ 1.让分割线占据全屏
+ 1.自定义分割线 2.设置系统属性就能搞定 (iOS6和iOS7适配 iOS7和iOS8适配) 3.重写cell的frame
+ 
+ */
 - (void)viewDidLoad {
     [super viewDidLoad];
     //设置导航栏标题
@@ -43,6 +47,13 @@ static NSString *const ID = @"subtag";
     [self.tableView registerNib:[UINib nibWithNibName:@"TYTableViewCell" bundle:nil] forCellReuseIdentifier:ID];
     // 加载数据 => 服务器 => 查看接口文档(1.基本url 2.请求参数 3.请求方式) => 发送请求 => 解析数据 => 字典转模型 => 展示到界面
     [self loadData];
+    
+    //让分割线占据全屏
+//    self.tableView.separatorInset = UIEdgeInsetsZero;
+    
+    //方法三(重写cell的frame)
+    //设置tableView的背景色
+    self.tableView.backgroundColor = [UIColor cyanColor];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -67,6 +78,12 @@ static NSString *const ID = @"subtag";
     
     //设置cell
     cell.item = self.subArray[indexPath.row];
+    
+    //iOS8往上需要设置
+//    if([[UIDevice currentDevice].systemVersion floatValue] >= 8.0)
+//    {
+//        cell.layoutMargins = UIEdgeInsetsZero;
+//    }
 
     // Configure the cell...
     
@@ -75,7 +92,7 @@ static NSString *const ID = @"subtag";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 60;
+    return 61;
 }
 
 #pragma mark - 请求数据
