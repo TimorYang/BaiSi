@@ -9,45 +9,66 @@
 #import "UIView+Frame.h"
 
 @implementation UIView (Frame)
-- (void)setTYx:(CGFloat)TYx
+
+- (void)setTY_x:(CGFloat)TY_x
 {
     CGRect frame = self.frame;
-    frame.origin.x = TYx;
+    frame.origin.x = TY_x;
     self.frame = frame;
 }
-- (CGFloat)TYx
+- (CGFloat)TY_x
 {
     return self.frame.origin.x;
 }
-- (void)setTYy:(CGFloat)TYy
+- (void)setTY_y:(CGFloat)TY_y
 {
     CGRect frame = self.frame;
-    frame.origin.x = TYy;
+    frame.origin.y = TY_y;
     self.frame = frame;
 }
-- (CGFloat)TYy
+- (CGFloat)TY_y
 {
     return self.frame.origin.y;
 }
-- (void)setTYwidth:(CGFloat)TYwidth
+- (void)setTY_width:(CGFloat)TY_width
 {
     CGRect frame = self.frame;
-    frame.size.width = TYwidth;
+    frame.size.width = TY_width;
     self.frame = frame;
 }
-- (CGFloat)TYwidth
+- (CGFloat)TY_width
 {
     return self.frame.size.width;
 }
-- (void)setTYheight:(CGFloat)TYheight
+- (void)setTY_height:(CGFloat)TY_height
 {
     CGRect frame = self.frame;
-    frame.size.height = TYheight;
+    frame.size.height = TY_height;
     self.frame = frame;
 }
-- (CGFloat)TYheight
+- (CGFloat)TY_height
 {
     
     return self.frame.size.height;
+}
+- (void)setTY_centerX:(CGFloat)TY_centerX
+{
+    CGPoint center = self.center;
+    center.x = TY_centerX;
+    self.center = center;
+}
+- (CGFloat)TY_centerX
+{
+    return self.center.x;
+}
+- (void)setTY_centerY:(CGFloat)TY_centerY
+{
+    CGPoint center = self.center;
+    center.y = TY_centerY;
+    self.center = center;
+}
+- (CGFloat)TY_centerY
+{
+    return self.center.y;
 }
 @end

@@ -143,8 +143,10 @@
     [self addChildViewController:friendTrendNav];
     
     //>> 我
-    //>> 1.创建UIViewController
-    TYMeVC *vc5 = [[TYMeVC alloc]init];
+    //>> 1.创建UIViewController(修改为用storyboard方式创建一个控制器)
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"TYMeVC" bundle:nil];
+    //加载箭头指向的控制器
+    TYMeVC *vc5 = [storyboard instantiateInitialViewController];
     //>> 3.创建UINavigationController并设置vc为essenceNav的根控制器
     TYNavigationController *meNav = [[TYNavigationController alloc]initWithRootViewController:vc5];
     //>> 4.将essenceNav添加到TabBarController中

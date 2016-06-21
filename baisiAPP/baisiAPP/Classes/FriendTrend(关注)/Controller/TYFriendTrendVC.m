@@ -8,7 +8,7 @@
 
 #import "TYFriendTrendVC.h"
 #import "UIBarButtonItem+item.h"
-
+#import "TYLoginRegisterViewController.h"
 @interface TYFriendTrendVC ()
 
 @end
@@ -19,7 +19,8 @@
     [super viewDidLoad];
     //设置导航栏内容
     [self setupNavigationBar];
-
+    //设置背景颜色
+    self.view.backgroundColor = TYColor(215, 215, 215, 1);
 }
 #pragma mark - 设置导航栏内容
 - (void)setupNavigationBar
@@ -36,6 +37,15 @@
 {
     NSLog(@"点击了推荐按钮");
 }
+
+#pragma mark - 点击立即登录注册
+- (IBAction)loginRegisterClick {
+    //modal出一个界面
+    //创建TYLoginRegisterViewController
+    TYLoginRegisterViewController *loginRegisterVC = [[TYLoginRegisterViewController alloc]init];
+    [self presentViewController:loginRegisterVC animated:YES completion:nil];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -10,9 +10,11 @@
 
 @interface UIView (Frame)
 
-@property CGFloat TYx;
-@property CGFloat TYy;
-@property CGFloat TYheight;
-@property CGFloat TYwidth;
+@property CGFloat TY_x;
+@property CGFloat TY_y;
+@property CGFloat TY_height;
+@property CGFloat TY_width;
+@property CGFloat TY_centerX;
+@property CGFloat TY_centerY;
 
 @end

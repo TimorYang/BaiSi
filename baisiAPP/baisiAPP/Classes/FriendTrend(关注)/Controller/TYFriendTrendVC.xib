@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TYFriendTrendVC">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="68c-jc-bPg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1f-So-eGw">
+                    <rect key="frame" x="66" y="294" width="243" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="UcY-ig-550"/>
+                        <constraint firstAttribute="height" constant="100" id="WBu-0e-9X8"/>
+                    </constraints>
+                    <string key="text">快快登录吧,关注百思最in牛人好友动态让你过把瘾儿~欧耶~~~!</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="WBu-0e-9X8"/>
+                        </mask>
+                    </variation>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_cry_icon" translatesAutoresizingMaskIntoConstraints="NO" id="MXX-IK-poE">
+                    <rect key="frame" x="163" y="226" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="WgF-hV-TWw"/>
+                        <constraint firstAttribute="height" constant="48" id="i0k-5A-gjf"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SbG-X5-Icm">
+                    <rect key="frame" x="66" y="394" width="243" height="48"/>
+                    <state key="normal" title="立即登录注册" backgroundImage="friendsTrend_login">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="friendsTrend_login_click">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginRegisterClick" destination="-1" eventType="touchUpInside" id="gth-dn-04g"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="MXX-IK-poE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Nu7-oO-rN9"/>
+                <constraint firstItem="L1f-So-eGw" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="R8i-eo-bT1"/>
+                <constraint firstItem="SbG-X5-Icm" firstAttribute="top" secondItem="L1f-So-eGw" secondAttribute="bottom" constant="20" id="ThP-zD-Ku1"/>
+                <constraint firstItem="L1f-So-eGw" firstAttribute="top" secondItem="MXX-IK-poE" secondAttribute="bottom" constant="20" id="WeF-Hw-EHB"/>
+                <constraint firstItem="MXX-IK-poE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bks-Jc-UAm"/>
+                <constraint firstItem="L1f-So-eGw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hur-Eo-vUI"/>
+                <constraint firstItem="SbG-X5-Icm" firstAttribute="height" secondItem="L1f-So-eGw" secondAttribute="height" id="kQP-4J-8iK"/>
+                <constraint firstItem="SbG-X5-Icm" firstAttribute="width" secondItem="L1f-So-eGw" secondAttribute="width" id="mVP-fW-XwW"/>
+                <constraint firstItem="SbG-X5-Icm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xVf-G8-q3z"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Nu7-oO-rN9"/>
+                    <exclude reference="kQP-4J-8iK"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="307.5" y="288.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="friendsTrend_login" width="243" height="48"/>
+        <image name="friendsTrend_login_click" width="243" height="48"/>
+        <image name="header_cry_icon" width="48" height="48"/>
+    </resources>
+</document>

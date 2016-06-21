@@ -17,6 +17,7 @@
 #define iPhone5 ([UIScreen mainScreen].bounds.size.height == 568)
 #define iPhone4 ([UIScreen mainScreen].bounds.size.height == 480)
 #define BaseURL @"http://api.budejie.com/api/api_open.php"
+#define TYColor(r, g, b, Alpha) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:b / 255.0 alpha:(Alpha)]
 
 #import "UIView+Frame.h"
 

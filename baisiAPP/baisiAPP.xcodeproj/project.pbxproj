@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A20CA9E1D16AD6F001B0C13 /* TYFriendTrendVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A20CA9D1D16AD6F001B0C13 /* TYFriendTrendVC.xib */; };
+		6A20CAA21D16B3C7001B0C13 /* TYLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A20CAA01D16B3C7001B0C13 /* TYLoginRegisterViewController.m */; };
+		6A20CAA31D16B3C7001B0C13 /* TYLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A20CAA11D16B3C7001B0C13 /* TYLoginRegisterViewController.xib */; };
+		6A20CAA91D16B9F7001B0C13 /* TYLoginRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A20CAA81D16B9F7001B0C13 /* TYLoginRegisterView.m */; };
+		6A20CAAB1D16BA0D001B0C13 /* TYLoginRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A20CAAA1D16BA0D001B0C13 /* TYLoginRegisterView.xib */; };
+		6A20CAAE1D16D882001B0C13 /* UITextField+PlaceHolderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A20CAAD1D16D882001B0C13 /* UITextField+PlaceHolderColor.m */; };
+		6A20CAB11D16D998001B0C13 /* TYFastLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A20CAB01D16D998001B0C13 /* TYFastLogin.m */; };
+		6A20CAB51D16D9B9001B0C13 /* TYFastLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A20CAB41D16D9B9001B0C13 /* TYFastLogin.xib */; };
+		6A20CAB81D16DA7D001B0C13 /* TYFastLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A20CAB71D16DA7D001B0C13 /* TYFastLoginButton.m */; };
 		6A33AC071D10603F00AAFBBF /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A33AC061D10603F00AAFBBF /* UIImage+Image.m */; };
 		6A37FF251D13DE4B00DD896F /* TYADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A37FF241D13DE4B00DD896F /* TYADViewController.m */; };
 		6A37FF271D13DE7900DD896F /* TYADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A37FF261D13DE7900DD896F /* TYADViewController.xib */; };
@@ -26,6 +35,11 @@
 		6A56FE621D1182C400AAC1E3 /* UIBarButtonItem+item.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A56FE611D1182C400AAC1E3 /* UIBarButtonItem+item.m */; };
 		6A56FE651D1196AE00AAC1E3 /* TYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A56FE641D1196AE00AAC1E3 /* TYNavigationController.m */; };
 		6A85946F1D11ACC20005637F /* TYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85946E1D11ACC20005637F /* TYSettingController.m */; };
+		6AEDF16C1D1777730024A778 /* TYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDF16B1D1777730024A778 /* TYTextField.m */; };
+		6AEDF16E1D1789F80024A778 /* TYMeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AEDF16D1D1789F80024A778 /* TYMeVC.storyboard */; };
+		6AEDF1721D179F780024A778 /* TYSquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDF1701D179F780024A778 /* TYSquareCell.m */; };
+		6AEDF1731D179F780024A778 /* TYSquareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AEDF1711D179F780024A778 /* TYSquareCell.xib */; };
+		6AEDF1761D17CB920024A778 /* TYSquareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDF1751D17CB920024A778 /* TYSquareItem.m */; };
 		6AF967611D1019B5005AF466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AF967601D1019B5005AF466 /* Assets.xcassets */; };
 		6AF967641D1019B5005AF466 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF967621D1019B5005AF466 /* LaunchScreen.storyboard */; };
 		6AF9678B1D102CFA005AF466 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF967841D102CFA005AF466 /* AppDelegate.m */; };
@@ -40,6 +54,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A20CA9D1D16AD6F001B0C13 /* TYFriendTrendVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYFriendTrendVC.xib; sourceTree = "<group>"; };
+		6A20CA9F1D16B3C7001B0C13 /* TYLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYLoginRegisterViewController.h; sourceTree = "<group>"; };
+		6A20CAA01D16B3C7001B0C13 /* TYLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYLoginRegisterViewController.m; sourceTree = "<group>"; };
+		6A20CAA11D16B3C7001B0C13 /* TYLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYLoginRegisterViewController.xib; sourceTree = "<group>"; };
+		6A20CAA71D16B9F7001B0C13 /* TYLoginRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYLoginRegisterView.h; sourceTree = "<group>"; };
+		6A20CAA81D16B9F7001B0C13 /* TYLoginRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYLoginRegisterView.m; sourceTree = "<group>"; };
+		6A20CAAA1D16BA0D001B0C13 /* TYLoginRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYLoginRegisterView.xib; sourceTree = "<group>"; };
+		6A20CAAC1D16D882001B0C13 /* UITextField+PlaceHolderColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PlaceHolderColor.h"; sourceTree = "<group>"; };
+		6A20CAAD1D16D882001B0C13 /* UITextField+PlaceHolderColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PlaceHolderColor.m"; sourceTree = "<group>"; };
+		6A20CAAF1D16D998001B0C13 /* TYFastLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFastLogin.h; sourceTree = "<group>"; };
+		6A20CAB01D16D998001B0C13 /* TYFastLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFastLogin.m; sourceTree = "<group>"; };
+		6A20CAB41D16D9B9001B0C13 /* TYFastLogin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYFastLogin.xib; sourceTree = "<group>"; };
+		6A20CAB61D16DA7D001B0C13 /* TYFastLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYFastLoginButton.h; sourceTree = "<group>"; };
+		6A20CAB71D16DA7D001B0C13 /* TYFastLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYFastLoginButton.m; sourceTree = "<group>"; };
 		6A33AC051D10603F00AAFBBF /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
 		6A33AC061D10603F00AAFBBF /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 		6A37FF231D13DE4B00DD896F /* TYADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYADViewController.h; sourceTree = "<group>"; };
@@ -70,6 +98,14 @@
 		6A56FE641D1196AE00AAC1E3 /* TYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYNavigationController.m; sourceTree = "<group>"; };
 		6A85946D1D11ACC20005637F /* TYSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSettingController.h; sourceTree = "<group>"; };
 		6A85946E1D11ACC20005637F /* TYSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSettingController.m; sourceTree = "<group>"; };
+		6AEDF16A1D1777730024A778 /* TYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTextField.h; sourceTree = "<group>"; };
+		6AEDF16B1D1777730024A778 /* TYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTextField.m; sourceTree = "<group>"; };
+		6AEDF16D1D1789F80024A778 /* TYMeVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TYMeVC.storyboard; sourceTree = "<group>"; };
+		6AEDF16F1D179F780024A778 /* TYSquareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSquareCell.h; sourceTree = "<group>"; };
+		6AEDF1701D179F780024A778 /* TYSquareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSquareCell.m; sourceTree = "<group>"; };
+		6AEDF1711D179F780024A778 /* TYSquareCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYSquareCell.xib; sourceTree = "<group>"; };
+		6AEDF1741D17CB920024A778 /* TYSquareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSquareItem.h; sourceTree = "<group>"; };
+		6AEDF1751D17CB920024A778 /* TYSquareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSquareItem.m; sourceTree = "<group>"; };
 		6AF967511D1019B4005AF466 /* baisiAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baisiAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF967601D1019B5005AF466 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AF967631D1019B5005AF466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -115,6 +151,8 @@
 				6A56FE5D1D1176E100AAC1E3 /* UIView+Frame.m */,
 				6A56FE601D1182C400AAC1E3 /* UIBarButtonItem+item.h */,
 				6A56FE611D1182C400AAC1E3 /* UIBarButtonItem+item.m */,
+				6A20CAAC1D16D882001B0C13 /* UITextField+PlaceHolderColor.h */,
+				6A20CAAD1D16D882001B0C13 /* UITextField+PlaceHolderColor.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -304,6 +342,10 @@
 			children = (
 				6AF967961D102F4A005AF466 /* TYFriendTrendVC.h */,
 				6AF967971D102F4A005AF466 /* TYFriendTrendVC.m */,
+				6A20CA9D1D16AD6F001B0C13 /* TYFriendTrendVC.xib */,
+				6A20CA9F1D16B3C7001B0C13 /* TYLoginRegisterViewController.h */,
+				6A20CAA01D16B3C7001B0C13 /* TYLoginRegisterViewController.m */,
+				6A20CAA11D16B3C7001B0C13 /* TYLoginRegisterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -318,6 +360,16 @@
 		6AF967731D102CFA005AF466 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6A20CAA71D16B9F7001B0C13 /* TYLoginRegisterView.h */,
+				6A20CAA81D16B9F7001B0C13 /* TYLoginRegisterView.m */,
+				6A20CAAA1D16BA0D001B0C13 /* TYLoginRegisterView.xib */,
+				6A20CAAF1D16D998001B0C13 /* TYFastLogin.h */,
+				6A20CAB01D16D998001B0C13 /* TYFastLogin.m */,
+				6A20CAB41D16D9B9001B0C13 /* TYFastLogin.xib */,
+				6A20CAB61D16DA7D001B0C13 /* TYFastLoginButton.h */,
+				6A20CAB71D16DA7D001B0C13 /* TYFastLoginButton.m */,
+				6AEDF16A1D1777730024A778 /* TYTextField.h */,
+				6AEDF16B1D1777730024A778 /* TYTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -372,6 +424,7 @@
 			children = (
 				6AF9679F1D1030F4005AF466 /* TYMeVC.h */,
 				6AF967A01D1030F4005AF466 /* TYMeVC.m */,
+				6AEDF16D1D1789F80024A778 /* TYMeVC.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -379,6 +432,8 @@
 		6AF9677C1D102CFA005AF466 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6AEDF1741D17CB920024A778 /* TYSquareItem.h */,
+				6AEDF1751D17CB920024A778 /* TYSquareItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -386,6 +441,9 @@
 		6AF9677D1D102CFA005AF466 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6AEDF16F1D179F780024A778 /* TYSquareCell.h */,
+				6AEDF1701D179F780024A778 /* TYSquareCell.m */,
+				6AEDF1711D179F780024A778 /* TYSquareCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -553,16 +611,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AEDF16E1D1789F80024A778 /* TYMeVC.storyboard in Resources */,
 				6A37FF271D13DE7900DD896F /* TYADViewController.xib in Resources */,
 				6A5548671D156B7900198464 /* LaunchImage-700-568h@2x.png in Resources */,
 				6A55486B1D156B7900198464 /* LaunchImage.png in Resources */,
+				6A20CA9E1D16AD6F001B0C13 /* TYFriendTrendVC.xib in Resources */,
 				6AF967641D1019B5005AF466 /* LaunchScreen.storyboard in Resources */,
 				6A3C51DB1D15A81F0047AC4E /* TYTableViewCell.xib in Resources */,
 				6A5548681D156B7900198464 /* LaunchImage-700@2x.png in Resources */,
+				6A20CAAB1D16BA0D001B0C13 /* TYLoginRegisterView.xib in Resources */,
 				6A55486A1D156B7900198464 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				6A20CAB51D16D9B9001B0C13 /* TYFastLogin.xib in Resources */,
+				6A20CAA31D16B3C7001B0C13 /* TYLoginRegisterViewController.xib in Resources */,
 				6A5548661D156B7900198464 /* LaunchImage-568h@2x.png in Resources */,
 				6A5548691D156B7900198464 /* LaunchImage-800-667h@2x.png in Resources */,
 				6AF967611D1019B5005AF466 /* Assets.xcassets in Resources */,
+				6AEDF1731D179F780024A778 /* TYSquareCell.xib in Resources */,
 				6A55486C1D156B7900198464 /* LaunchImage@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -622,17 +686,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A20CAA21D16B3C7001B0C13 /* TYLoginRegisterViewController.m in Sources */,
 				6A37FF251D13DE4B00DD896F /* TYADViewController.m in Sources */,
 				6AF967981D102F4A005AF466 /* TYFriendTrendVC.m in Sources */,
 				6AF967951D102F2C005AF466 /* TYEssenceVC.m in Sources */,
 				6A3C51DE1D15B0910047AC4E /* TYSubTagItem.m in Sources */,
 				6AF9678F1D102DBE005AF466 /* TYTabBarController.m in Sources */,
+				6AEDF16C1D1777730024A778 /* TYTextField.m in Sources */,
+				6A20CAB81D16DA7D001B0C13 /* TYFastLoginButton.m in Sources */,
+				6A20CAB11D16D998001B0C13 /* TYFastLogin.m in Sources */,
 				6A33AC071D10603F00AAFBBF /* UIImage+Image.m in Sources */,
+				6AEDF1721D179F780024A778 /* TYSquareCell.m in Sources */,
 				6A3C51D61D15A1E50047AC4E /* TYSubTagViewController.m in Sources */,
 				6A56FE651D1196AE00AAC1E3 /* TYNavigationController.m in Sources */,
+				6A20CAAE1D16D882001B0C13 /* UITextField+PlaceHolderColor.m in Sources */,
+				6A20CAA91D16B9F7001B0C13 /* TYLoginRegisterView.m in Sources */,
 				6A55486F1D15762C00198464 /* TYADItem.m in Sources */,
 				6AF967A11D1030F4005AF466 /* TYMeVC.m in Sources */,
 				6A85946F1D11ACC20005637F /* TYSettingController.m in Sources */,
+				6AEDF1761D17CB920024A778 /* TYSquareItem.m in Sources */,
 				6AF9678B1D102CFA005AF466 /* AppDelegate.m in Sources */,
 				6A56FE621D1182C400AAC1E3 /* UIBarButtonItem+item.m in Sources */,
 				6A3C51DA1D15A81F0047AC4E /* TYTableViewCell.m in Sources */,

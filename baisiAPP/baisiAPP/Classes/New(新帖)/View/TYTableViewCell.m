@@ -29,7 +29,7 @@
     // Initialization code
     //第一种方法
     //设置圆角半径
-//    self.icon.layer.cornerRadius = self.icon.TYwidth * 0.5;
+//    self.icon.layer.cornerRadius = self.icon.TY_width * 0.5;
     //超出主层的裁剪
 //    self.icon.layer.masksToBounds = YES;
     //第二种方法
@@ -64,7 +64,7 @@
         //开启图形上下文
         UIGraphicsBeginImageContextWithOptions(self.icon.frame.size, NO, 0);
         //描述圆形裁剪区域
-        UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, self.icon.TYwidth, self.icon.TYheight)];
+        UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, self.icon.TY_width, self.icon.TY_height)];
         //设置裁剪区域
         [path addClip];
         //画图片
