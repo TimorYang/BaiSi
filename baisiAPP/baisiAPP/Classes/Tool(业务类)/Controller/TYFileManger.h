@@ -10,6 +10,6 @@
 
 @interface TYFileManger : NSObject
 
-+ (NSInteger)getDirectorySizeOfDirectoryPath:(NSString *)directoryPath;
++ (void)getDirectorySizeOfDirectoryPath:(NSString *)directoryPath completion:(void(^)(NSInteger))completionBlock;
  
 @end

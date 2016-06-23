@@ -18,9 +18,11 @@
 #import "TYSettingController.h"
 #import <UIImageView+WebCache.h>
 #import "TYFileManger.h"
+#import <SVProgressHUD/SVProgressHUD.h>
 
 @interface TYSettingController ()<UITableViewDelegate>
-
+/** 文件大小 */
+@property (nonatomic, assign) NSInteger totalSize;
 @end
 
 static NSString * const ID = @"cell";
@@ -38,6 +40,16 @@ static NSString * const ID = @"cell";
     //去掉底部的线
     self.tableView.tableFooterView = [[UIView alloc]init];
     NSLog(@"sd----%ld", [[SDImageCache sharedImageCache]getSize]);
+    
+    //获取文件夹尺寸
+    [SVProgressHUD showWithStatus:@"正在计算缓存"];
+    [TYFileManger getDirectorySizeOfDirectoryPath:TYCaches completion:^(NSInteger totalSize) {
+        [SVProgressHUD dismiss];
+        self.totalSize = totalSize;
+        //刷新数据
+        [self.tableView reloadData];
+        //把动画dismiss
+    }];
     
     //设置代理
     self.tableView.delegate = self;
@@ -70,27 +82,23 @@ static NSString * const ID = @"cell";
 #pragma mark - 文件大小转字符串
 - (NSString *)totalSizeStr
 {
-    //获取要计算大小的文件夹
-    NSString *cachesPath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
-    //获取文件夹尺寸
-    NSInteger totalSize = [TYFileManger getDirectorySizeOfDirectoryPath:cachesPath];
     NSString *totalSizeStr = @"清理缓存";
     //定义一个变量保存转换后的totalSize
     CGFloat totalSizeF = 0;
     //判断文件大小是否超过1M
-    if(totalSize > 1000 * 1000)
+    if(self.totalSize > 1000 * 1000)
     {
-        totalSizeF = totalSize / 1000.0 / 1000.0;
+        totalSizeF = self.totalSize / 1000.0 / 1000.0;
         //格式转换
         totalSizeStr = [NSString stringWithFormat:@"%@%.1lfM", totalSizeStr, totalSizeF];
-    }else if (totalSize > 1000)
+    }else if (self.totalSize > 1000)
     {
-        totalSizeF = totalSize / 1000.0;
+        totalSizeF = self.totalSize / 1000.0;
         //格式转换
         totalSizeStr = [NSString stringWithFormat:@"%@%.1lfKB", totalSizeStr, totalSizeF];
-    }else if (totalSize > 0)
+    }else if (self.totalSize > 0)
     {
-        totalSizeStr = [NSString stringWithFormat:@"%@%ldB", totalSizeStr, totalSize];
+        totalSizeStr = [NSString stringWithFormat:@"%@%ldB", totalSizeStr, self.totalSize];
     }
     //如果后面是.0就替换为空
     totalSizeStr = [totalSizeStr stringByReplacingOccurrencesOfString:@".0" withString:@""];
