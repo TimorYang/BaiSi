@@ -30,6 +30,14 @@
  
  填补缺口,让collectionView更好看一些
  
+ 点击cell跳转到URL对应的网页
+    设置代理.监听Item的点击
+    加载网页的方式
+    1.Application shareapplication openURL
+    2.UIWebView
+    3.WKWebView
+ 
+ 
  */
 #import "TYMeVC.h"
 #import "UIBarButtonItem+item.h"
@@ -38,12 +46,14 @@
 #import <MJExtension/MJExtension.h>
 #import "TYSquareCell.h"
 #import "TYSquareItem.h"
+#import "TYWebViewController.h"
+#import <SafariServices/SafariServices.h>
 CGFloat const margin = 1;
 NSInteger const cols = 4;
 #define itemWH (TYScreenW - (cols - 1) * margin) / cols
 
 static NSString * const ID = @"squrecell";
-@interface TYMeVC ()<UICollectionViewDataSource>
+@interface TYMeVC ()<UICollectionViewDataSource, UICollectionViewDelegate, SFSafariViewControllerDelegate>
 /** 模型数组 */
 @property (nonatomic, strong) NSMutableArray *squareItemArr;
 
@@ -124,6 +134,8 @@ static NSString * const ID = @"squrecell";
         collectionView.backgroundColor = TYColor(215, 215, 215, 1);
         //3.设置数据源
         collectionView.dataSource = self;
+        //4.设置代理
+        collectionView.delegate = self;
         //4.注册cell(collectView必须要注册)
         [collectionView registerNib:[UINib nibWithNibName:@"TYSquareCell" bundle:nil] forCellWithReuseIdentifier:ID];
         collectionView;
@@ -198,4 +210,56 @@ static NSString * const ID = @"squrecell";
         }
     }
 }
+
+#pragma mark - UICollectionViewDelegate
+//监听当前选中的item
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    //获取URL
+    TYSquareItem *item = self.squareItemArr[indexPath.row];
+    NSURL *url = [NSURL URLWithString:item.url];
+    //跳转网页
+    //第一种方式UIApplication openURL
+//    [[UIApplication sharedApplication]openURL:url];
+    //第二种方式UIWebView
+    //2.UIWebView 好处:在当前app下打开网页 坏处:没有任何功能 2.不能监听到加载网页的进度
+    //需求:即想要在当前app下打开网页,又想有safari功能,如何做? UIWebView(前进,后退,刷新,网址,进度条)
+    //创建UIWebView
+//    TYWebViewController *webVC = [[TYWebViewController alloc]init];
+    //push过去
+//    [self.navigationController pushViewController:webVC animated:YES];
+    //第三种方式SFSafariViewController
+    /*
+     3.iOS9  SFSafariViewController:就是用来展示网页,并且有safari所有功能
+     必须要导入#import <SafariServices/SafariServices.h>
+     SFSafariViewController 使用 modal
+     */
+    //这个方法只有iOS9才能使用,在iOS8中不能使用(在iOS8中需要使用其他方法)
+    //创建SFSafariViewController
+//    SFSafariViewController *sfSafariVC = [[SFSafariViewController alloc]initWithURL:url];
+    //设置SFSafariViewController的代理
+//    sfSafariVC.delegate = self;
+    //跳转到sfSafariVC界面
+//    [self.navigationController pushViewController:sfSafariVC animated:YES];
+    //苹果希望这个界面是modal出来的
+//    [self presentViewController:sfSafariVC animated:YES completion:nil];;
+    //第四种方式 WKWebView
+    /* 
+     4.WKWebView iOS8 (1.能监听进度条 2.网页缓存) (自己实现前进,后退,刷新,网址,进度条)
+     导入 WebKit
+     */
+    TYWebViewController *webVC = [[TYWebViewController alloc]init];
+    webVC.url = url;
+    [self.navigationController pushViewController:webVC animated:YES];
+    
+}
+
+#pragma mark - SFSafariViewControllerDelegate
+//点击了SFSafariViewController的Done按钮
+//- (void)safariViewControllerDidFinish:(SFSafariViewController *)controller
+//{
+//    //SafariViewController dismiss
+//    
+//}
+
 @end

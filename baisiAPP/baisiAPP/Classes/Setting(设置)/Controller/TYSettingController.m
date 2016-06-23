@@ -16,16 +16,31 @@
  */
 
 #import "TYSettingController.h"
+#import <UIImageView+WebCache.h>
+#import "TYFileManger.h"
 
+@interface TYSettingController ()<UITableViewDelegate>
+
+@end
+
+static NSString * const ID = @"cell";
 @implementation TYSettingController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setupBackButton];
+    //添加返回按钮
+//    [self setupBackButton];
     
-    //添加手势
+    //注册cell
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
     
+    //去掉底部的线
+    self.tableView.tableFooterView = [[UIView alloc]init];
+    NSLog(@"sd----%ld", [[SDImageCache sharedImageCache]getSize]);
+    
+    //设置代理
+    self.tableView.delegate = self;
 }
 #pragma mark - 设置导航栏返回按钮
 - (void)setupBackButton
@@ -33,5 +48,64 @@
     
 }
 
+#pragma mark - 数据源方法
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
+    cell.textLabel.text = [self totalSizeStr];
+    return cell;
+}
+
+#pragma mark - 文件大小转字符串
+- (NSString *)totalSizeStr
+{
+    //获取要计算大小的文件夹
+    NSString *cachesPath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
+    //获取文件夹尺寸
+    NSInteger totalSize = [TYFileManger getDirectorySizeOfDirectoryPath:cachesPath];
+    NSString *totalSizeStr = @"清理缓存";
+    //定义一个变量保存转换后的totalSize
+    CGFloat totalSizeF = 0;
+    //判断文件大小是否超过1M
+    if(totalSize > 1000 * 1000)
+    {
+        totalSizeF = totalSize / 1000.0 / 1000.0;
+        //格式转换
+        totalSizeStr = [NSString stringWithFormat:@"%@%.1lfM", totalSizeStr, totalSizeF];
+    }else if (totalSize > 1000)
+    {
+        totalSizeF = totalSize / 1000.0;
+        //格式转换
+        totalSizeStr = [NSString stringWithFormat:@"%@%.1lfKB", totalSizeStr, totalSizeF];
+    }else if (totalSize > 0)
+    {
+        totalSizeStr = [NSString stringWithFormat:@"%@%ldB", totalSizeStr, totalSize];
+    }
+    //如果后面是.0就替换为空
+    totalSizeStr = [totalSizeStr stringByReplacingOccurrencesOfString:@".0" withString:@""];
+    
+    return totalSizeStr;
+}
+
+
+#pragma mark - UITableViewDelegate
+//点击了cell调用这个方法
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    //刷新tableView
+    [self.tableView reloadData];
+}
 
 @end

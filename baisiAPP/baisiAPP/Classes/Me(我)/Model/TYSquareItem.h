@@ -14,5 +14,7 @@
 @property (nonatomic, strong) NSString *icon;
 /** name */
 @property (nonatomic, strong) NSString *name;
+/** url */
+@property (nonatomic, strong) NSString *url;
 
 @end
