@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A07E2AB1D1B86DA0051CADC /* TYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A07E2AA1D1B86DA0051CADC /* TYBaseViewController.m */; };
 		6A20CA9E1D16AD6F001B0C13 /* TYFriendTrendVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A20CA9D1D16AD6F001B0C13 /* TYFriendTrendVC.xib */; };
 		6A20CAA21D16B3C7001B0C13 /* TYLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A20CAA01D16B3C7001B0C13 /* TYLoginRegisterViewController.m */; };
 		6A20CAA31D16B3C7001B0C13 /* TYLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A20CAA11D16B3C7001B0C13 /* TYLoginRegisterViewController.xib */; };
@@ -23,6 +24,10 @@
 		6A3C51DA1D15A81F0047AC4E /* TYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C51D81D15A81F0047AC4E /* TYTableViewCell.m */; };
 		6A3C51DB1D15A81F0047AC4E /* TYTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A3C51D91D15A81F0047AC4E /* TYTableViewCell.xib */; };
 		6A3C51DE1D15B0910047AC4E /* TYSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C51DD1D15B0910047AC4E /* TYSubTagItem.m */; };
+		6A4CDF711D1E96C500B0EE20 /* TYThemeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4CDF6F1D1E96C500B0EE20 /* TYThemeCell.m */; };
+		6A4CDF751D1E9A3100B0EE20 /* TYThemeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4CDF741D1E9A3100B0EE20 /* TYThemeItem.m */; };
+		6A4CDF811D1EA05B00B0EE20 /* TYThemeTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4CDF7F1D1EA05B00B0EE20 /* TYThemeTopView.m */; };
+		6A4CDF821D1EA05B00B0EE20 /* TYThemeTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A4CDF801D1EA05B00B0EE20 /* TYThemeTopView.xib */; };
 		6A5548661D156B7900198464 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A55485F1D156B7900198464 /* LaunchImage-568h@2x.png */; };
 		6A5548671D156B7900198464 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5548601D156B7900198464 /* LaunchImage-700-568h@2x.png */; };
 		6A5548681D156B7900198464 /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5548611D156B7900198464 /* LaunchImage-700@2x.png */; };
@@ -62,6 +67,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A07E2A91D1B86DA0051CADC /* TYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYBaseViewController.h; sourceTree = "<group>"; };
+		6A07E2AA1D1B86DA0051CADC /* TYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYBaseViewController.m; sourceTree = "<group>"; };
 		6A20CA9D1D16AD6F001B0C13 /* TYFriendTrendVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYFriendTrendVC.xib; sourceTree = "<group>"; };
 		6A20CA9F1D16B3C7001B0C13 /* TYLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYLoginRegisterViewController.h; sourceTree = "<group>"; };
 		6A20CAA01D16B3C7001B0C13 /* TYLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYLoginRegisterViewController.m; sourceTree = "<group>"; };
@@ -88,6 +95,13 @@
 		6A3C51D91D15A81F0047AC4E /* TYTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYTableViewCell.xib; sourceTree = "<group>"; };
 		6A3C51DC1D15B0910047AC4E /* TYSubTagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSubTagItem.h; sourceTree = "<group>"; };
 		6A3C51DD1D15B0910047AC4E /* TYSubTagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSubTagItem.m; sourceTree = "<group>"; };
+		6A4CDF6E1D1E96C500B0EE20 /* TYThemeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYThemeCell.h; sourceTree = "<group>"; };
+		6A4CDF6F1D1E96C500B0EE20 /* TYThemeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYThemeCell.m; sourceTree = "<group>"; };
+		6A4CDF731D1E9A3100B0EE20 /* TYThemeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYThemeItem.h; sourceTree = "<group>"; };
+		6A4CDF741D1E9A3100B0EE20 /* TYThemeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYThemeItem.m; sourceTree = "<group>"; };
+		6A4CDF7E1D1EA05B00B0EE20 /* TYThemeTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYThemeTopView.h; sourceTree = "<group>"; };
+		6A4CDF7F1D1EA05B00B0EE20 /* TYThemeTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYThemeTopView.m; sourceTree = "<group>"; };
+		6A4CDF801D1EA05B00B0EE20 /* TYThemeTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYThemeTopView.xib; sourceTree = "<group>"; };
 		6A55485F1D156B7900198464 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
 		6A5548601D156B7900198464 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
 		6A5548611D156B7900198464 /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
@@ -165,6 +179,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A07E2A71D1B85B20051CADC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6A07E2A81D1B86A10051CADC /* Controller */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6A07E2A81D1B86A10051CADC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6A07E2A91D1B86DA0051CADC /* TYBaseViewController.h */,
+				6A07E2AA1D1B86DA0051CADC /* TYBaseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		6A33AC011D105DAC00AAFBBF /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +245,16 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6A4CDF7D1D1EA05B00B0EE20 /* ChildView */ = {
+			isa = PBXGroup;
+			children = (
+				6A4CDF7E1D1EA05B00B0EE20 /* TYThemeTopView.h */,
+				6A4CDF7F1D1EA05B00B0EE20 /* TYThemeTopView.m */,
+				6A4CDF801D1EA05B00B0EE20 /* TYThemeTopView.xib */,
+			);
+			path = ChildView;
 			sourceTree = "<group>";
 		};
 		6A55485E1D156B7900198464 /* 启动图片 */ = {
@@ -354,6 +395,7 @@
 		6AF9676B1D102CFA005AF466 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6A07E2A71D1B85B20051CADC /* Base */,
 				6AE887301D1A29D900A99EAB /* Tool(业务类) */,
 				6A37FF1F1D13DCF300DD896F /* AD(广告) */,
 				6A8594691D11AA970005637F /* Setting(设置) */,
@@ -391,6 +433,8 @@
 		6AF9676E1D102CFA005AF466 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6A4CDF731D1E9A3100B0EE20 /* TYThemeItem.h */,
+				6A4CDF741D1E9A3100B0EE20 /* TYThemeItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -398,6 +442,9 @@
 		6AF9676F1D102CFA005AF466 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6A4CDF7D1D1EA05B00B0EE20 /* ChildView */,
+				6A4CDF6E1D1E96C500B0EE20 /* TYThemeCell.h */,
+				6A4CDF6F1D1E96C500B0EE20 /* TYThemeCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -699,6 +746,7 @@
 				6A3C51DB1D15A81F0047AC4E /* TYTableViewCell.xib in Resources */,
 				6A5548681D156B7900198464 /* LaunchImage-700@2x.png in Resources */,
 				6A20CAAB1D16BA0D001B0C13 /* TYLoginRegisterView.xib in Resources */,
+				6A4CDF821D1EA05B00B0EE20 /* TYThemeTopView.xib in Resources */,
 				6A55486A1D156B7900198464 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				6A20CAB51D16D9B9001B0C13 /* TYFastLogin.xib in Resources */,
 				6A20CAA31D16B3C7001B0C13 /* TYLoginRegisterViewController.xib in Resources */,
@@ -766,11 +814,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A20CAA21D16B3C7001B0C13 /* TYLoginRegisterViewController.m in Sources */,
+				6A4CDF711D1E96C500B0EE20 /* TYThemeCell.m in Sources */,
 				6A37FF251D13DE4B00DD896F /* TYADViewController.m in Sources */,
 				6AF967981D102F4A005AF466 /* TYFriendTrendVC.m in Sources */,
+				6A4CDF811D1EA05B00B0EE20 /* TYThemeTopView.m in Sources */,
 				6AF967951D102F2C005AF466 /* TYEssenceVC.m in Sources */,
 				6AE887361D1A29FC00A99EAB /* TYFileManger.m in Sources */,
 				6A3C51DE1D15B0910047AC4E /* TYSubTagItem.m in Sources */,
+				6A4CDF751D1E9A3100B0EE20 /* TYThemeItem.m in Sources */,
 				6AF9678F1D102DBE005AF466 /* TYTabBarController.m in Sources */,
 				6AEDF16C1D1777730024A778 /* TYTextField.m in Sources */,
 				6A20CAB81D16DA7D001B0C13 /* TYFastLoginButton.m in Sources */,
@@ -785,6 +836,7 @@
 				6A20CAA91D16B9F7001B0C13 /* TYLoginRegisterView.m in Sources */,
 				6A55486F1D15762C00198464 /* TYADItem.m in Sources */,
 				6AE887461D1AADEC00A99EAB /* TYTextViewController.m in Sources */,
+				6A07E2AB1D1B86DA0051CADC /* TYBaseViewController.m in Sources */,
 				6AF967A11D1030F4005AF466 /* TYMeVC.m in Sources */,
 				6A85946F1D11ACC20005637F /* TYSettingController.m in Sources */,
 				6AE8873D1D1AAD9300A99EAB /* TYVideoViewController.m in Sources */,

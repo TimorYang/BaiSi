@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface TYNewVC : UIViewController
+#import "TYBaseViewController.h"
+@interface TYNewVC : TYBaseViewController
 
 @end

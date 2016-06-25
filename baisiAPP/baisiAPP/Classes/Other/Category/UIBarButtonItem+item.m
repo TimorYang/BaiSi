@@ -36,7 +36,7 @@
     UIButton *buttonItem = [UIButton buttonWithType:UIButtonTypeCustom];
     //2.设置Button默认图片
     [buttonItem setImage:image forState:UIControlStateNormal];
-    //3.设置Button高亮图片
+    //3.设置Button选中图片
     [buttonItem setImage:selectImage forState:UIControlStateSelected];
     //4.设置Button尺寸
     [buttonItem sizeToFit];

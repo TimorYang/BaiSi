@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TYThemeTopView">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="123"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultUserIcon" translatesAutoresizingMaskIntoConstraints="NO" id="yFe-7T-eKy">
+                    <rect key="frame" x="10" y="10" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="5yL-T4-79M"/>
+                        <constraint firstAttribute="height" constant="35" id="a2Q-az-cU4"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySP-iy-3Fd">
+                    <rect key="frame" x="55" y="24" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSQ-5h-jZj">
+                    <rect key="frame" x="55" y="10" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jwg-St-7Dg">
+                    <rect key="frame" x="10" y="55" width="325" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3i-sN-2MR">
+                    <rect key="frame" x="311" y="17" width="24" height="22"/>
+                    <state key="normal" image="cellmorebtnnormal"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Jwg-St-7Dg" secondAttribute="trailing" constant="10" id="2Qp-Vm-Ued"/>
+                <constraint firstItem="yFe-7T-eKy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="3nh-Ux-0M7"/>
+                <constraint firstItem="yFe-7T-eKy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="GdD-fP-5D1"/>
+                <constraint firstItem="KSQ-5h-jZj" firstAttribute="top" secondItem="yFe-7T-eKy" secondAttribute="top" id="Lkp-TQ-oYE"/>
+                <constraint firstItem="r3i-sN-2MR" firstAttribute="centerY" secondItem="yFe-7T-eKy" secondAttribute="centerY" id="OSm-Cf-fwe"/>
+                <constraint firstItem="Jwg-St-7Dg" firstAttribute="top" secondItem="yFe-7T-eKy" secondAttribute="bottom" constant="10" id="T2Q-bx-ECh"/>
+                <constraint firstItem="Jwg-St-7Dg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="TpA-yo-6Wb"/>
+                <constraint firstItem="KSQ-5h-jZj" firstAttribute="leading" secondItem="yFe-7T-eKy" secondAttribute="trailing" constant="10" id="YUi-49-98e"/>
+                <constraint firstAttribute="trailing" secondItem="r3i-sN-2MR" secondAttribute="trailing" constant="10" id="kbZ-Sm-5vR"/>
+                <constraint firstItem="ySP-iy-3Fd" firstAttribute="bottom" secondItem="yFe-7T-eKy" secondAttribute="bottom" id="oi8-pu-SfB"/>
+                <constraint firstItem="ySP-iy-3Fd" firstAttribute="leading" secondItem="yFe-7T-eKy" secondAttribute="trailing" constant="10" id="zgK-yf-tD5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentText" destination="Jwg-St-7Dg" id="rAz-te-XAh"/>
+                <outlet property="passTime" destination="ySP-iy-3Fd" id="kIY-JT-wTV"/>
+                <outlet property="userIcon" destination="yFe-7T-eKy" id="AsW-zv-W5b"/>
+                <outlet property="userName" destination="KSQ-5h-jZj" id="FUe-iq-cbr"/>
+            </connections>
+            <point key="canvasLocation" x="276.5" y="339.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cellmorebtnnormal" width="24" height="20"/>
+        <image name="defaultUserIcon" width="50" height="50"/>
+    </resources>
+</document>
