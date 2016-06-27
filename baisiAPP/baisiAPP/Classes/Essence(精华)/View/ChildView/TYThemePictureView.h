@@ -1,5 +1,5 @@
 //
-//  TYThemeTopView.h
+//  TYThemePictureView.h
 //  baisiAPP
 //
 //  Created by TimorYang on 16/6/25.
@@ -9,9 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "TYThemeBaseView.h"
 @class TYThemeItem;
-@interface TYThemeTopView : TYThemeBaseView
+@interface TYThemePictureView : TYThemeBaseView
 
 /** TYThemeItem */
-@property (nonatomic, strong) TYThemeItem *Item;
-
+@property (nonatomic, strong) TYThemeItem *item;
 @end

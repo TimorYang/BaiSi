@@ -28,11 +28,6 @@
 }
 */
 
-+ (instancetype)viewForXib
-{
-    return [[NSBundle mainBundle]loadNibNamed:@"TYThemeTopView" owner:nil options:nil].firstObject;
-}
-
 - (void)setItem:(TYThemeItem *)Item
 {
     _Item = Item;

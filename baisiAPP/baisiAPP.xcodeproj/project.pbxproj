@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		6A07E2AB1D1B86DA0051CADC /* TYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A07E2AA1D1B86DA0051CADC /* TYBaseViewController.m */; };
+		6A0A290D1D1EDC8700B14233 /* TYThemePictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A290C1D1EDC8700B14233 /* TYThemePictureView.m */; };
+		6A0A290F1D1EDC9D00B14233 /* TYThemePictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A0A290E1D1EDC9D00B14233 /* TYThemePictureView.xib */; };
+		6A147E321D20D054005DF0C0 /* TYThemeVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A147E311D20D054005DF0C0 /* TYThemeVoiceView.m */; };
+		6A147E341D20D095005DF0C0 /* TYThemeVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A147E331D20D095005DF0C0 /* TYThemeVoiceView.xib */; };
+		6A147E3A1D210943005DF0C0 /* TYThemeVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A147E391D210943005DF0C0 /* TYThemeVideoView.m */; };
+		6A147E3C1D21095E005DF0C0 /* TYThemeVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A147E3B1D21095E005DF0C0 /* TYThemeVideoView.xib */; };
+		6A147E3F1D210BA4005DF0C0 /* TYThemeBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A147E3E1D210BA4005DF0C0 /* TYThemeBaseView.m */; };
 		6A20CA9E1D16AD6F001B0C13 /* TYFriendTrendVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A20CA9D1D16AD6F001B0C13 /* TYFriendTrendVC.xib */; };
 		6A20CAA21D16B3C7001B0C13 /* TYLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A20CAA01D16B3C7001B0C13 /* TYLoginRegisterViewController.m */; };
 		6A20CAA31D16B3C7001B0C13 /* TYLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A20CAA11D16B3C7001B0C13 /* TYLoginRegisterViewController.xib */; };
@@ -28,6 +35,7 @@
 		6A4CDF751D1E9A3100B0EE20 /* TYThemeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4CDF741D1E9A3100B0EE20 /* TYThemeItem.m */; };
 		6A4CDF811D1EA05B00B0EE20 /* TYThemeTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4CDF7F1D1EA05B00B0EE20 /* TYThemeTopView.m */; };
 		6A4CDF821D1EA05B00B0EE20 /* TYThemeTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A4CDF801D1EA05B00B0EE20 /* TYThemeTopView.xib */; };
+		6A4CDF861D1ECA3400B0EE20 /* TYThemeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4CDF851D1ECA3400B0EE20 /* TYThemeViewModel.m */; };
 		6A5548661D156B7900198464 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A55485F1D156B7900198464 /* LaunchImage-568h@2x.png */; };
 		6A5548671D156B7900198464 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5548601D156B7900198464 /* LaunchImage-700-568h@2x.png */; };
 		6A5548681D156B7900198464 /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5548611D156B7900198464 /* LaunchImage-700@2x.png */; };
@@ -69,6 +77,17 @@
 /* Begin PBXFileReference section */
 		6A07E2A91D1B86DA0051CADC /* TYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYBaseViewController.h; sourceTree = "<group>"; };
 		6A07E2AA1D1B86DA0051CADC /* TYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYBaseViewController.m; sourceTree = "<group>"; };
+		6A0A290B1D1EDC8700B14233 /* TYThemePictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYThemePictureView.h; sourceTree = "<group>"; };
+		6A0A290C1D1EDC8700B14233 /* TYThemePictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYThemePictureView.m; sourceTree = "<group>"; };
+		6A0A290E1D1EDC9D00B14233 /* TYThemePictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYThemePictureView.xib; sourceTree = "<group>"; };
+		6A147E301D20D054005DF0C0 /* TYThemeVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYThemeVoiceView.h; sourceTree = "<group>"; };
+		6A147E311D20D054005DF0C0 /* TYThemeVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYThemeVoiceView.m; sourceTree = "<group>"; };
+		6A147E331D20D095005DF0C0 /* TYThemeVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYThemeVoiceView.xib; sourceTree = "<group>"; };
+		6A147E381D210943005DF0C0 /* TYThemeVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYThemeVideoView.h; sourceTree = "<group>"; };
+		6A147E391D210943005DF0C0 /* TYThemeVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYThemeVideoView.m; sourceTree = "<group>"; };
+		6A147E3B1D21095E005DF0C0 /* TYThemeVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYThemeVideoView.xib; sourceTree = "<group>"; };
+		6A147E3D1D210BA4005DF0C0 /* TYThemeBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYThemeBaseView.h; sourceTree = "<group>"; };
+		6A147E3E1D210BA4005DF0C0 /* TYThemeBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYThemeBaseView.m; sourceTree = "<group>"; };
 		6A20CA9D1D16AD6F001B0C13 /* TYFriendTrendVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYFriendTrendVC.xib; sourceTree = "<group>"; };
 		6A20CA9F1D16B3C7001B0C13 /* TYLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYLoginRegisterViewController.h; sourceTree = "<group>"; };
 		6A20CAA01D16B3C7001B0C13 /* TYLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYLoginRegisterViewController.m; sourceTree = "<group>"; };
@@ -102,6 +121,8 @@
 		6A4CDF7E1D1EA05B00B0EE20 /* TYThemeTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYThemeTopView.h; sourceTree = "<group>"; };
 		6A4CDF7F1D1EA05B00B0EE20 /* TYThemeTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYThemeTopView.m; sourceTree = "<group>"; };
 		6A4CDF801D1EA05B00B0EE20 /* TYThemeTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYThemeTopView.xib; sourceTree = "<group>"; };
+		6A4CDF841D1ECA3400B0EE20 /* TYThemeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYThemeViewModel.h; sourceTree = "<group>"; };
+		6A4CDF851D1ECA3400B0EE20 /* TYThemeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYThemeViewModel.m; sourceTree = "<group>"; };
 		6A55485F1D156B7900198464 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
 		6A5548601D156B7900198464 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
 		6A5548611D156B7900198464 /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
@@ -253,8 +274,28 @@
 				6A4CDF7E1D1EA05B00B0EE20 /* TYThemeTopView.h */,
 				6A4CDF7F1D1EA05B00B0EE20 /* TYThemeTopView.m */,
 				6A4CDF801D1EA05B00B0EE20 /* TYThemeTopView.xib */,
+				6A0A290B1D1EDC8700B14233 /* TYThemePictureView.h */,
+				6A0A290C1D1EDC8700B14233 /* TYThemePictureView.m */,
+				6A0A290E1D1EDC9D00B14233 /* TYThemePictureView.xib */,
+				6A147E301D20D054005DF0C0 /* TYThemeVoiceView.h */,
+				6A147E311D20D054005DF0C0 /* TYThemeVoiceView.m */,
+				6A147E331D20D095005DF0C0 /* TYThemeVoiceView.xib */,
+				6A147E381D210943005DF0C0 /* TYThemeVideoView.h */,
+				6A147E391D210943005DF0C0 /* TYThemeVideoView.m */,
+				6A147E3B1D21095E005DF0C0 /* TYThemeVideoView.xib */,
+				6A147E3D1D210BA4005DF0C0 /* TYThemeBaseView.h */,
+				6A147E3E1D210BA4005DF0C0 /* TYThemeBaseView.m */,
 			);
 			path = ChildView;
+			sourceTree = "<group>";
+		};
+		6A4CDF831D1ECA0600B0EE20 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6A4CDF841D1ECA3400B0EE20 /* TYThemeViewModel.h */,
+				6A4CDF851D1ECA3400B0EE20 /* TYThemeViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		6A55485E1D156B7900198464 /* 启动图片 */ = {
@@ -413,6 +454,7 @@
 		6AF9676C1D102CFA005AF466 /* Essence(精华) */ = {
 			isa = PBXGroup;
 			children = (
+				6A4CDF831D1ECA0600B0EE20 /* ViewModel */,
 				6AF9676D1D102CFA005AF466 /* Controller */,
 				6AF9676E1D102CFA005AF466 /* Model */,
 				6AF9676F1D102CFA005AF466 /* View */,
@@ -738,8 +780,10 @@
 			files = (
 				6A6CEAB61D19539200780CE2 /* TYWebViewController.xib in Resources */,
 				6AEDF16E1D1789F80024A778 /* TYMeVC.storyboard in Resources */,
+				6A147E341D20D095005DF0C0 /* TYThemeVoiceView.xib in Resources */,
 				6A37FF271D13DE7900DD896F /* TYADViewController.xib in Resources */,
 				6A5548671D156B7900198464 /* LaunchImage-700-568h@2x.png in Resources */,
+				6A147E3C1D21095E005DF0C0 /* TYThemeVideoView.xib in Resources */,
 				6A55486B1D156B7900198464 /* LaunchImage.png in Resources */,
 				6A20CA9E1D16AD6F001B0C13 /* TYFriendTrendVC.xib in Resources */,
 				6AF967641D1019B5005AF466 /* LaunchScreen.storyboard in Resources */,
@@ -750,6 +794,7 @@
 				6A55486A1D156B7900198464 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				6A20CAB51D16D9B9001B0C13 /* TYFastLogin.xib in Resources */,
 				6A20CAA31D16B3C7001B0C13 /* TYLoginRegisterViewController.xib in Resources */,
+				6A0A290F1D1EDC9D00B14233 /* TYThemePictureView.xib in Resources */,
 				6A5548661D156B7900198464 /* LaunchImage-568h@2x.png in Resources */,
 				6A5548691D156B7900198464 /* LaunchImage-800-667h@2x.png in Resources */,
 				6AF967611D1019B5005AF466 /* Assets.xcassets in Resources */,
@@ -813,12 +858,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A147E3F1D210BA4005DF0C0 /* TYThemeBaseView.m in Sources */,
 				6A20CAA21D16B3C7001B0C13 /* TYLoginRegisterViewController.m in Sources */,
 				6A4CDF711D1E96C500B0EE20 /* TYThemeCell.m in Sources */,
 				6A37FF251D13DE4B00DD896F /* TYADViewController.m in Sources */,
 				6AF967981D102F4A005AF466 /* TYFriendTrendVC.m in Sources */,
 				6A4CDF811D1EA05B00B0EE20 /* TYThemeTopView.m in Sources */,
 				6AF967951D102F2C005AF466 /* TYEssenceVC.m in Sources */,
+				6A147E321D20D054005DF0C0 /* TYThemeVoiceView.m in Sources */,
 				6AE887361D1A29FC00A99EAB /* TYFileManger.m in Sources */,
 				6A3C51DE1D15B0910047AC4E /* TYSubTagItem.m in Sources */,
 				6A4CDF751D1E9A3100B0EE20 /* TYThemeItem.m in Sources */,
@@ -826,8 +873,11 @@
 				6AEDF16C1D1777730024A778 /* TYTextField.m in Sources */,
 				6A20CAB81D16DA7D001B0C13 /* TYFastLoginButton.m in Sources */,
 				6A20CAB11D16D998001B0C13 /* TYFastLogin.m in Sources */,
+				6A147E3A1D210943005DF0C0 /* TYThemeVideoView.m in Sources */,
+				6A4CDF861D1ECA3400B0EE20 /* TYThemeViewModel.m in Sources */,
 				6A33AC071D10603F00AAFBBF /* UIImage+Image.m in Sources */,
 				6A6CEAB51D19539200780CE2 /* TYWebViewController.m in Sources */,
+				6A0A290D1D1EDC8700B14233 /* TYThemePictureView.m in Sources */,
 				6AEDF1721D179F780024A778 /* TYSquareCell.m in Sources */,
 				6A3C51D61D15A1E50047AC4E /* TYSubTagViewController.m in Sources */,
 				6A56FE651D1196AE00AAC1E3 /* TYNavigationController.m in Sources */,

@@ -11,14 +11,25 @@
 #import <AFNetworking/AFNetworking.h>
 #import <MJExtension/MJExtension.h>
 #import "TYThemeItem.h"
+#import "TYThemeViewModel.h"
 
 static NSString * const ID = @"All";
 @interface TYAllViewController ()
 
-@property (nonatomic, strong) NSArray *itemArray;
+@property (nonatomic, strong) NSMutableArray *itemArray;
 @end
 
 @implementation TYAllViewController
+
+#pragma mark - itemArray懒加载
+- (NSMutableArray *)itemArray
+{
+    if(_itemArray == nil)
+    {
+        _itemArray = [NSMutableArray array];
+    }
+    return _itemArray;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -45,6 +56,7 @@ static NSString * const ID = @"All";
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     parameters[@"a"] = @"list";
     parameters[@"c"] = @"data";
+    parameters[@"type"] = @(TYThemeTypeAll);
     //发送请求
     [mgr GET:BaseURL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [responseObject writeToFile:@"/Users/timoryang/Documents/OC项目/BaiSi/baisiAPP/baisiAPP/Classes/Essence(精华)/all.plist" atomically:YES];
@@ -52,7 +64,13 @@ static NSString * const ID = @"All";
         //定义一个数组保存返回的数据
         NSArray *dataArr = responseObject[@"list"];
         //字典转模型
-        self.itemArray = [TYThemeItem mj_objectArrayWithKeyValuesArray:dataArr];
+        NSArray *modelItemArray = [TYThemeItem mj_objectArrayWithKeyValuesArray:dataArr];
+        //模型存放到视图模型
+        for (TYThemeItem *item in modelItemArray) {
+            TYThemeViewModel *vm = [[TYThemeViewModel alloc]init];
+            vm.item = item;
+            [self.itemArray addObject:vm];
+        }
         
         //刷新数据
         [self.tableView reloadData];
@@ -66,18 +84,19 @@ static NSString * const ID = @"All";
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 20;
+    return self.itemArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TYThemeCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
-    cell.item = self.itemArray[indexPath.row];
+    cell.vm = self.itemArray[indexPath.row];
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 100;
+    TYThemeViewModel *vm = self.itemArray[indexPath.row];
+    return vm.cell_h;
 }
 
 /*

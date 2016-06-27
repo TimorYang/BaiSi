@@ -111,7 +111,11 @@ static NSString * const ID = @"cell";
 //点击了cell调用这个方法
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    NSLog(@"清空缓存");
+    //删除cash文件夹
+    [TYFileManger removeDirectoryPath:TYCaches];
+    //一定要记得清空缓存尺寸
+    _totalSize = 0;
     //刷新tableView
     [self.tableView reloadData];
 }

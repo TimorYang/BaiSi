@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-@class TYThemeItem;
+@class TYThemeViewModel;
 @interface TYThemeCell : UITableViewCell
 
-@property (nonatomic, strong) TYThemeItem *item;
+@property (nonatomic, strong) TYThemeViewModel *vm;
 @end

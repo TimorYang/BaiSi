@@ -8,11 +8,22 @@
 
 #import "TYThemeCell.h"
 #import "TYThemeTopView.h"
+#import "TYThemeViewModel.h"
+#import "TYThemePictureView.h"
+#import "TYThemeVoiceView.h"
 #import "TYThemeItem.h"
+#import "TYThemeVideoView.h"
 
 @interface TYThemeCell ()
 
+/** topView */
 @property (nonatomic, weak) TYThemeTopView *topView;
+/** pictureView */
+@property (nonatomic, weak) TYThemePictureView *pictureView;
+/** voiceView */
+@property (nonatomic, weak) TYThemeVoiceView *voiceView;
+/** videoView */
+@property (nonatomic, weak) TYThemeVideoView *videoView;
 
 @end
 @implementation TYThemeCell
@@ -27,23 +38,69 @@
         TYThemeTopView *topView = [TYThemeTopView viewForXib];
         self.topView = topView;
         [self.contentView addSubview:topView];
-        
-        //2.设置TopView的位置和尺寸
-        
-        
-        
-        
+
         //添加middleView
+        //添加pictureView
+        TYThemePictureView *pictureView = [TYThemePictureView viewForXib];
+        self.pictureView = pictureView;
+        [self.contentView addSubview:pictureView];
+        //添加videoView
+        TYThemeVideoView *videoView = [TYThemeVideoView viewForXib];
+        self.videoView = videoView;
+        [self.contentView addSubview:videoView];
+        //添加VoiceView
+        TYThemeVoiceView *voiceView = [TYThemeVoiceView viewForXib];
+        self.voiceView = voiceView;
+        [self.contentView addSubview:voiceView];
         //添加hotCommentView
+        
     }
     return self;
 }
 
-- (void)setItem:(TYThemeItem *)item
+- (void)setVm:(TYThemeViewModel *)vm
 {
-    _item = item;
+    _vm = vm;
     //设置TopView
-    self.topView.Item = item;
+    self.topView.Item = vm.item;
+    self.topView.frame = vm.topViewFrame;
+    
+    //判断middleView中添加的是那种类型的View
+    if(vm.item.type == TYThemeTypePicture)
+    {
+        //隐藏其他view
+        self.voiceView.hidden = YES;
+        self.videoView.hidden = YES;
+        //设置pictureView
+        self.pictureView.hidden = NO;
+        self.pictureView.item = vm.item;
+        self.pictureView.frame = vm.middleFrame;
+    }else if (vm.item.type == TYThemeTypeVoice)
+    {
+        //隐藏其他view
+        self.pictureView.hidden = YES;
+        self.videoView.hidden = YES;
+        //设置voiceView
+        self.voiceView.hidden = NO;
+        self.voiceView.item = vm.item;
+        self.voiceView.frame = vm.middleFrame;
+    }else if (vm.item.type == TYThemeTypeVideo)
+    {
+        //隐藏其他View
+        self.pictureView.hidden = YES;
+        self.voiceView.hidden = YES;
+        
+        //设置videoView
+        self.videoView.hidden = NO;
+        self.videoView.item = vm.item;
+        self.videoView.frame = vm.middleFrame;
+    }else
+    {
+        self.pictureView.hidden = YES;
+        self.voiceView.hidden = YES;
+        self.videoView.hidden = YES;
+    }
+    
 }
 
 @end

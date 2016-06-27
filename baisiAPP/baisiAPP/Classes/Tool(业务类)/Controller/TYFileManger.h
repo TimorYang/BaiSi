@@ -11,5 +11,7 @@
 @interface TYFileManger : NSObject
 
 + (void)getDirectorySizeOfDirectoryPath:(NSString *)directoryPath completion:(void(^)(NSInteger))completionBlock;
+
++ (void)removeDirectoryPath:(NSString *)directoryPath;
  
 @end
